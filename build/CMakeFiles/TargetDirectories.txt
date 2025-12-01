@@ -1,0 +1,5 @@
+C:/Users/Korti/Desktop/Compliment/build/CMakeFiles/Compliment.dir
+C:/Users/Korti/Desktop/Compliment/build/CMakeFiles/edit_cache.dir
+C:/Users/Korti/Desktop/Compliment/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Korti/Desktop/Compliment/build/CMakeFiles/Compliment_autogen_timestamp_deps.dir
+C:/Users/Korti/Desktop/Compliment/build/CMakeFiles/Compliment_autogen.dir
