@@ -710,6 +710,9 @@ C:/Users/Korti/Desktop/Compliment/inc/complimentWidgets/circle.h
  mdp:C:/Users/Korti/Desktop/Compliment/inc/shape/creators/filler.h
  mdp:C:/Users/Korti/Desktop/Compliment/inc/shape/creators/lineCreator.h
  mdp:C:/Users/Korti/Desktop/Compliment/inc/shape/shapes/disk.h
+C:/Users/Korti/Desktop/Compliment/src/color/gradient/gradientCreator.cpp
+C:/Users/Korti/Desktop/Compliment/src/color/gradient/conditionExecutor.cpp
+C:/Users/Korti/Desktop/Compliment/src/base/shape.cpp
 C:/Users/Korti/Desktop/Compliment/inc/complimentWidgets/donat.h
  mmc:Q_OBJECT
  mdp:C:/Qt/6.10.1/mingw_64/include/QtCore/QDeadlineTimer
@@ -1422,16 +1425,14 @@ C:/Users/Korti/Desktop/Compliment/inc/complimentWidgets/donat.h
  mdp:C:/Users/Korti/Desktop/Compliment/inc/shape/creators/filler.h
  mdp:C:/Users/Korti/Desktop/Compliment/inc/shape/creators/lineCreator.h
  mdp:C:/Users/Korti/Desktop/Compliment/inc/shape/shapes/disk.h
-C:/Users/Korti/Desktop/Compliment/src/base/shape.cpp
-C:/Users/Korti/Desktop/Compliment/src/color/gradient/conditionExecutor.cpp
-C:/Users/Korti/Desktop/Compliment/src/color/gradient/gradientCreator.cpp
+C:/Users/Korti/Desktop/Compliment/src/color/colorSetters/IttentGradientColorSetter.cpp
 C:/Users/Korti/Desktop/Compliment/src/shape/creators/donatCreator.cpp
 C:/Users/Korti/Desktop/Compliment/src/base/basicoperations.cpp
-C:/Users/Korti/Desktop/Compliment/src/color/colorSetters/IttentGradientColorSetter.cpp
 C:/Users/Korti/Desktop/Compliment/src/color/gradient/intervalConditions.cpp
-C:/Users/Korti/Desktop/Compliment/src/complimentWidgets/circle.cpp
 C:/Users/Korti/Desktop/Compliment/src/shape/shapes/disk.cpp
+C:/Users/Korti/Desktop/Compliment/src/complimentWidgets/circle.cpp
 C:/Users/Korti/Desktop/Compliment/src/complimentWidgets/donat.cpp
+C:/Users/Korti/Desktop/Compliment/src/main.cpp
 C:/Users/Korti/Desktop/Compliment/inc/complimentWidgets/colorIndicator.h
  mmc:Q_OBJECT
  mdp:C:/Qt/6.10.1/mingw_64/include/QtCore/QDeadlineTimer
@@ -2145,7 +2146,6 @@ C:/Users/Korti/Desktop/Compliment/inc/complimentWidgets/colorIndicator.h
  mdp:C:/Users/Korti/Desktop/Compliment/inc/shape/creators/lineCreator.h
  mdp:C:/Users/Korti/Desktop/Compliment/inc/shape/shapes/disk.h
  mdp:C:/Users/Korti/Desktop/Compliment/inc/shape/shapes/donat.h
-C:/Users/Korti/Desktop/Compliment/src/main.cpp
 C:/Users/Korti/Desktop/Compliment/src/shape/creators/diskCreator.cpp
 C:/Users/Korti/Desktop/Compliment/src/shape/creators/filler.cpp
 C:/Users/Korti/Desktop/Compliment/src/shape/creators/lineCreator.cpp

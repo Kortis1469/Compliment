@@ -65,9 +65,9 @@ include CMakeFiles/Compliment_autogen_timestamp_deps.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/Compliment_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/Compliment_autogen_timestamp_deps: C:/Qt/6.10.1/mingw_64/bin/uic.exe
 CMakeFiles/Compliment_autogen_timestamp_deps: C:/Qt/6.10.1/mingw_64/lib/libQt6Core.a
 CMakeFiles/Compliment_autogen_timestamp_deps: C:/Qt/6.10.1/mingw_64/bin/moc.exe
+CMakeFiles/Compliment_autogen_timestamp_deps: C:/Qt/6.10.1/mingw_64/bin/uic.exe
 CMakeFiles/Compliment_autogen_timestamp_deps: C:/Qt/6.10.1/mingw_64/lib/libQt6Widgets.a
 
 Compliment_autogen_timestamp_deps: CMakeFiles/Compliment_autogen_timestamp_deps
