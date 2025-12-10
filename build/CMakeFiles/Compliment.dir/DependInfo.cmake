@@ -17,13 +17,14 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Korti/Desktop/Compliment/src/color/gradient/gradientCreator.cpp" "CMakeFiles/Compliment.dir/src/color/gradient/gradientCreator.cpp.obj" "gcc" "CMakeFiles/Compliment.dir/src/color/gradient/gradientCreator.cpp.obj.d"
   "C:/Users/Korti/Desktop/Compliment/src/color/gradient/intervalConditions.cpp" "CMakeFiles/Compliment.dir/src/color/gradient/intervalConditions.cpp.obj" "gcc" "CMakeFiles/Compliment.dir/src/color/gradient/intervalConditions.cpp.obj.d"
   "C:/Users/Korti/Desktop/Compliment/src/complimentWidgets/circle.cpp" "CMakeFiles/Compliment.dir/src/complimentWidgets/circle.cpp.obj" "gcc" "CMakeFiles/Compliment.dir/src/complimentWidgets/circle.cpp.obj.d"
-  "C:/Users/Korti/Desktop/Compliment/src/complimentWidgets/donat.cpp" "CMakeFiles/Compliment.dir/src/complimentWidgets/donat.cpp.obj" "gcc" "CMakeFiles/Compliment.dir/src/complimentWidgets/donat.cpp.obj.d"
+  "C:/Users/Korti/Desktop/Compliment/src/complimentWidgets/colorIndicator.cpp" "CMakeFiles/Compliment.dir/src/complimentWidgets/colorIndicator.cpp.obj" "gcc" "CMakeFiles/Compliment.dir/src/complimentWidgets/colorIndicator.cpp.obj.d"
   "C:/Users/Korti/Desktop/Compliment/src/main.cpp" "CMakeFiles/Compliment.dir/src/main.cpp.obj" "gcc" "CMakeFiles/Compliment.dir/src/main.cpp.obj.d"
   "C:/Users/Korti/Desktop/Compliment/src/shape/creators/diskCreator.cpp" "CMakeFiles/Compliment.dir/src/shape/creators/diskCreator.cpp.obj" "gcc" "CMakeFiles/Compliment.dir/src/shape/creators/diskCreator.cpp.obj.d"
+  "C:/Users/Korti/Desktop/Compliment/src/shape/creators/donatCreator.cpp" "CMakeFiles/Compliment.dir/src/shape/creators/donatCreator.cpp.obj" "gcc" "CMakeFiles/Compliment.dir/src/shape/creators/donatCreator.cpp.obj.d"
   "C:/Users/Korti/Desktop/Compliment/src/shape/creators/filler.cpp" "CMakeFiles/Compliment.dir/src/shape/creators/filler.cpp.obj" "gcc" "CMakeFiles/Compliment.dir/src/shape/creators/filler.cpp.obj.d"
   "C:/Users/Korti/Desktop/Compliment/src/shape/creators/lineCreator.cpp" "CMakeFiles/Compliment.dir/src/shape/creators/lineCreator.cpp.obj" "gcc" "CMakeFiles/Compliment.dir/src/shape/creators/lineCreator.cpp.obj.d"
-  "C:/Users/Korti/Desktop/Compliment/src/shape/creators/shapeCreator.cpp" "CMakeFiles/Compliment.dir/src/shape/creators/shapeCreator.cpp.obj" "gcc" "CMakeFiles/Compliment.dir/src/shape/creators/shapeCreator.cpp.obj.d"
   "C:/Users/Korti/Desktop/Compliment/src/shape/shapes/disk.cpp" "CMakeFiles/Compliment.dir/src/shape/shapes/disk.cpp.obj" "gcc" "CMakeFiles/Compliment.dir/src/shape/shapes/disk.cpp.obj.d"
+  "C:/Users/Korti/Desktop/Compliment/src/shape/shapes/donat.cpp" "CMakeFiles/Compliment.dir/src/shape/shapes/donat.cpp.obj" "gcc" "CMakeFiles/Compliment.dir/src/shape/shapes/donat.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

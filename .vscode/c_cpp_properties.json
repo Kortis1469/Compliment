@@ -8,10 +8,12 @@
                 "C:/Qt/6.10.1/mingw_64/include/QtCore",
                 "C:/Qt/6.10.1/mingw_64/include/QtGui",
                 "C:/Qt/6.10.1/mingw_64/include/QtWidgets",
+                "${workspaceFolder}/inc/shape/shapes",
                 "${workspaceFolder}/inc/shape/creators",
                 "${workspaceFolder}/inc/base",
                 "${workspaceFolder}/inc/complimentWidgets",
-                "${workspaceFolder}/inc/color/colorSetters"
+                "${workspaceFolder}/inc/color/colorSetters",
+                "${workspaceFolder}/inc/color/gradient"
             ],
             "browse": {
                 "path": [

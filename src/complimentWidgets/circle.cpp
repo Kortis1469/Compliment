@@ -5,14 +5,13 @@ Circle::Circle(QWidget *parent, uint16_t width, uint16_t height) : QWidget(paren
     resize(radius*2, radius*2);
 }
 
-
 void Circle::paintEvent(QPaintEvent *event) {
 
     DiskCreator diskCr(radius, radius, radius);
     std::shared_ptr<Shape> disk = diskCr.create();
-    IttenGradientColorSetter itten;
-    disk->setColor(itten);
-    std::shared_ptr<std::vector<point>> pts = disk->getPointsOfShapePtr();
+    disk->setColor(IttenGradientColorSetter());
+    
+    std::shared_ptr<const std::vector<point>> pts = disk->getPointsOfShapePtr();
     
     QPainter p;
     p.begin(this);

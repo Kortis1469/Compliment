@@ -264,9 +264,9 @@
 			null
 		],
 		[
-			"C:/Users/Korti/Desktop/Compliment/inc/complimentWidgets/donat.h",
+			"C:/Users/Korti/Desktop/Compliment/inc/complimentWidgets/colorIndicator.h",
 			"MU",
-			"NBHKMO5RWK/moc_donat.cpp",
+			"NBHKMO5RWK/moc_colorIndicator.cpp",
 			null
 		]
 	],
@@ -383,13 +383,18 @@
 			null
 		],
 		[
-			"C:/Users/Korti/Desktop/Compliment/src/complimentWidgets/donat.cpp",
+			"C:/Users/Korti/Desktop/Compliment/src/complimentWidgets/colorIndicator.cpp",
 			"MU",
 			null
 		],
 		[ "C:/Users/Korti/Desktop/Compliment/src/main.cpp", "MU", null ],
 		[
 			"C:/Users/Korti/Desktop/Compliment/src/shape/creators/diskCreator.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Korti/Desktop/Compliment/src/shape/creators/donatCreator.cpp",
 			"MU",
 			null
 		],
@@ -404,12 +409,12 @@
 			null
 		],
 		[
-			"C:/Users/Korti/Desktop/Compliment/src/shape/creators/shapeCreator.cpp",
+			"C:/Users/Korti/Desktop/Compliment/src/shape/shapes/disk.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/Korti/Desktop/Compliment/src/shape/shapes/disk.cpp",
+			"C:/Users/Korti/Desktop/Compliment/src/shape/shapes/donat.cpp",
 			"MU",
 			null
 		]

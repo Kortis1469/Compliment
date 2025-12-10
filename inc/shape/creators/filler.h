@@ -1,3 +1,4 @@
+#pragma once
 #include "lineCreator.h"
 
 class SolidFiller{

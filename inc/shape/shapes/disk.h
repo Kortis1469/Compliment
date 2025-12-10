@@ -1,3 +1,4 @@
+#pragma once
 #include "basicTypes.h"
 #include "shape.h"
 
@@ -6,7 +7,7 @@ class Disk:public Shape{
         uint16_t xCenter;
         uint16_t yCenter;
         uint16_t radius;
-        bool checkSetterType(ColorSetter& setter) override;
+        virtual bool checkSetterType(ColorSetter& setter) override;
     public:
         uint16_t getXCenter();
         uint16_t getYCenter();

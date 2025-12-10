@@ -1,9 +1,7 @@
-#ifndef GRADIENTCREATOR_H
-#define GRADIENTCREATOR_H
-#include "basicTypes.h"
+#pragma once
 #include "conditionExecutor.h"
-#include "intervalConditions.h"
 #include "basicoperations.h"
+#include "intervalСonditions.h"
 
 class GradientPointColorSubtractor{
 private:
@@ -27,6 +25,3 @@ public:
     IttentGradientCreator(ColorSettings red, ColorSettings blue, ColorSettings green);
     void colorizeWithGradient(std::vector<point> &circle, point pCenter, int r);
 };
-
-
-#endif // GRADIENTCREATOR_H

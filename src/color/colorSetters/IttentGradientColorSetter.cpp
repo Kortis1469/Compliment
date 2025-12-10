@@ -2,7 +2,7 @@
 #include "gradientCreator.h"
 
 
-void IttenGradientColorSetter::colorize(std::vector<point> &pointsOfShape, Shape &shape)
+void IttenGradientColorSetter::colorize(std::vector<point> &pointsOfShape, Shape &shape) const
 {
     IttentGradientCreator ittenGradientCreator(
         {-PI/3, 2*PI/3, PI/3, PI/3},

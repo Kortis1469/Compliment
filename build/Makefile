@@ -346,29 +346,29 @@ src/complimentWidgets/circle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/complimentWidgets/circle.cpp.s
 .PHONY : src/complimentWidgets/circle.cpp.s
 
-src/complimentWidgets/donat.obj: src/complimentWidgets/donat.cpp.obj
-.PHONY : src/complimentWidgets/donat.obj
+src/complimentWidgets/colorIndicator.obj: src/complimentWidgets/colorIndicator.cpp.obj
+.PHONY : src/complimentWidgets/colorIndicator.obj
 
 # target to build an object file
-src/complimentWidgets/donat.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/complimentWidgets/donat.cpp.obj
-.PHONY : src/complimentWidgets/donat.cpp.obj
+src/complimentWidgets/colorIndicator.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/complimentWidgets/colorIndicator.cpp.obj
+.PHONY : src/complimentWidgets/colorIndicator.cpp.obj
 
-src/complimentWidgets/donat.i: src/complimentWidgets/donat.cpp.i
-.PHONY : src/complimentWidgets/donat.i
+src/complimentWidgets/colorIndicator.i: src/complimentWidgets/colorIndicator.cpp.i
+.PHONY : src/complimentWidgets/colorIndicator.i
 
 # target to preprocess a source file
-src/complimentWidgets/donat.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/complimentWidgets/donat.cpp.i
-.PHONY : src/complimentWidgets/donat.cpp.i
+src/complimentWidgets/colorIndicator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/complimentWidgets/colorIndicator.cpp.i
+.PHONY : src/complimentWidgets/colorIndicator.cpp.i
 
-src/complimentWidgets/donat.s: src/complimentWidgets/donat.cpp.s
-.PHONY : src/complimentWidgets/donat.s
+src/complimentWidgets/colorIndicator.s: src/complimentWidgets/colorIndicator.cpp.s
+.PHONY : src/complimentWidgets/colorIndicator.s
 
 # target to generate assembly for a file
-src/complimentWidgets/donat.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/complimentWidgets/donat.cpp.s
-.PHONY : src/complimentWidgets/donat.cpp.s
+src/complimentWidgets/colorIndicator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/complimentWidgets/colorIndicator.cpp.s
+.PHONY : src/complimentWidgets/colorIndicator.cpp.s
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
@@ -418,6 +418,30 @@ src/shape/creators/diskCreator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/shape/creators/diskCreator.cpp.s
 .PHONY : src/shape/creators/diskCreator.cpp.s
 
+src/shape/creators/donatCreator.obj: src/shape/creators/donatCreator.cpp.obj
+.PHONY : src/shape/creators/donatCreator.obj
+
+# target to build an object file
+src/shape/creators/donatCreator.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/shape/creators/donatCreator.cpp.obj
+.PHONY : src/shape/creators/donatCreator.cpp.obj
+
+src/shape/creators/donatCreator.i: src/shape/creators/donatCreator.cpp.i
+.PHONY : src/shape/creators/donatCreator.i
+
+# target to preprocess a source file
+src/shape/creators/donatCreator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/shape/creators/donatCreator.cpp.i
+.PHONY : src/shape/creators/donatCreator.cpp.i
+
+src/shape/creators/donatCreator.s: src/shape/creators/donatCreator.cpp.s
+.PHONY : src/shape/creators/donatCreator.s
+
+# target to generate assembly for a file
+src/shape/creators/donatCreator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/shape/creators/donatCreator.cpp.s
+.PHONY : src/shape/creators/donatCreator.cpp.s
+
 src/shape/creators/filler.obj: src/shape/creators/filler.cpp.obj
 .PHONY : src/shape/creators/filler.obj
 
@@ -466,30 +490,6 @@ src/shape/creators/lineCreator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/shape/creators/lineCreator.cpp.s
 .PHONY : src/shape/creators/lineCreator.cpp.s
 
-src/shape/creators/shapeCreator.obj: src/shape/creators/shapeCreator.cpp.obj
-.PHONY : src/shape/creators/shapeCreator.obj
-
-# target to build an object file
-src/shape/creators/shapeCreator.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/shape/creators/shapeCreator.cpp.obj
-.PHONY : src/shape/creators/shapeCreator.cpp.obj
-
-src/shape/creators/shapeCreator.i: src/shape/creators/shapeCreator.cpp.i
-.PHONY : src/shape/creators/shapeCreator.i
-
-# target to preprocess a source file
-src/shape/creators/shapeCreator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/shape/creators/shapeCreator.cpp.i
-.PHONY : src/shape/creators/shapeCreator.cpp.i
-
-src/shape/creators/shapeCreator.s: src/shape/creators/shapeCreator.cpp.s
-.PHONY : src/shape/creators/shapeCreator.s
-
-# target to generate assembly for a file
-src/shape/creators/shapeCreator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/shape/creators/shapeCreator.cpp.s
-.PHONY : src/shape/creators/shapeCreator.cpp.s
-
 src/shape/shapes/disk.obj: src/shape/shapes/disk.cpp.obj
 .PHONY : src/shape/shapes/disk.obj
 
@@ -513,6 +513,30 @@ src/shape/shapes/disk.s: src/shape/shapes/disk.cpp.s
 src/shape/shapes/disk.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/shape/shapes/disk.cpp.s
 .PHONY : src/shape/shapes/disk.cpp.s
+
+src/shape/shapes/donat.obj: src/shape/shapes/donat.cpp.obj
+.PHONY : src/shape/shapes/donat.obj
+
+# target to build an object file
+src/shape/shapes/donat.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/shape/shapes/donat.cpp.obj
+.PHONY : src/shape/shapes/donat.cpp.obj
+
+src/shape/shapes/donat.i: src/shape/shapes/donat.cpp.i
+.PHONY : src/shape/shapes/donat.i
+
+# target to preprocess a source file
+src/shape/shapes/donat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/shape/shapes/donat.cpp.i
+.PHONY : src/shape/shapes/donat.cpp.i
+
+src/shape/shapes/donat.s: src/shape/shapes/donat.cpp.s
+.PHONY : src/shape/shapes/donat.s
+
+# target to generate assembly for a file
+src/shape/shapes/donat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/shape/shapes/donat.cpp.s
+.PHONY : src/shape/shapes/donat.cpp.s
 
 # Help Target
 help:
@@ -549,27 +573,30 @@ help:
 	@echo ... src/complimentWidgets/circle.obj
 	@echo ... src/complimentWidgets/circle.i
 	@echo ... src/complimentWidgets/circle.s
-	@echo ... src/complimentWidgets/donat.obj
-	@echo ... src/complimentWidgets/donat.i
-	@echo ... src/complimentWidgets/donat.s
+	@echo ... src/complimentWidgets/colorIndicator.obj
+	@echo ... src/complimentWidgets/colorIndicator.i
+	@echo ... src/complimentWidgets/colorIndicator.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
 	@echo ... src/shape/creators/diskCreator.obj
 	@echo ... src/shape/creators/diskCreator.i
 	@echo ... src/shape/creators/diskCreator.s
+	@echo ... src/shape/creators/donatCreator.obj
+	@echo ... src/shape/creators/donatCreator.i
+	@echo ... src/shape/creators/donatCreator.s
 	@echo ... src/shape/creators/filler.obj
 	@echo ... src/shape/creators/filler.i
 	@echo ... src/shape/creators/filler.s
 	@echo ... src/shape/creators/lineCreator.obj
 	@echo ... src/shape/creators/lineCreator.i
 	@echo ... src/shape/creators/lineCreator.s
-	@echo ... src/shape/creators/shapeCreator.obj
-	@echo ... src/shape/creators/shapeCreator.i
-	@echo ... src/shape/creators/shapeCreator.s
 	@echo ... src/shape/shapes/disk.obj
 	@echo ... src/shape/shapes/disk.i
 	@echo ... src/shape/shapes/disk.s
+	@echo ... src/shape/shapes/donat.obj
+	@echo ... src/shape/shapes/donat.i
+	@echo ... src/shape/shapes/donat.s
 .PHONY : help
 
 

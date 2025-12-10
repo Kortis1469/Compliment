@@ -1,6 +1,6 @@
 #ifndef DONAT_H
 #define DONAT_H
-
+#pragma once
 
 #include <QPainter>
 #include <QPushButton>
@@ -11,20 +11,19 @@
 #include <QColor>
 #include <QtCore>
 #include <QMouseEvent>
-#include "circle.h"
+#include "basicTypes.h"
+#include "diskCreator.h"
+#include "donatCreator.h"
 
-class Donat : public QWidget
+class ColorIndicator : public QWidget
 {
     Q_OBJECT
 private:
-    DonatCreator donatCr;
     std::vector<point> donat;
 public:
-    Donat(QWidget *parent);
+    ColorIndicator(QWidget *parent);
     void paintEvent(QPaintEvent *event) override;
     //void mousePressEvent(QMouseEvent *event) override;
-    ~Donat();
-
-
+    ~ColorIndicator();
 };
 #endif // DONAT_H

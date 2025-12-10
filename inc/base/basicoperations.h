@@ -1,5 +1,4 @@
-#ifndef BASICOPERATIONS_H
-#define BASICOPERATIONS_H
+#pragma once
 #include "basicTypes.h"
 #include <QtCore>
 
@@ -22,6 +21,3 @@ class ComporatorLinScan{
     public:
         static bool compare(const point& l, const point& r);
 };
-
-#endif // BASICOPERATIONS_H
-

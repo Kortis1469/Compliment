@@ -1,5 +1,4 @@
-#ifndef INTERVALCONDITIONS_H
-#define INTERVALCONDITIONS_H
+#pragma once
 #include "basicTypes.h"
 
 
@@ -58,5 +57,3 @@ class CyclicRangeConditionDefiner:public ConditionDefiner{
     public:
         std::shared_ptr<IntervalConditions> defineCondition(double leftValue, double rightValue) override;
 };
-
-#endif // INTERVALCONDITIONS_H

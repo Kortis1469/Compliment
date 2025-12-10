@@ -1,5 +1,6 @@
 #ifndef BASICTYPES_H
 #define BASICTYPES_H
+#pragma once
 #include <QColor>
 
 #define PI 3.14159265359

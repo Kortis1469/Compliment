@@ -40,26 +40,28 @@ include_directories(${PROJECT_SOURCE_DIR}/inc/shape/shapes)
 set(PROJECT_SOURCES
     src/main.cpp
    
-
-    src/base/basicOperations.cpp
     src/base/shape.cpp
+    src/base/basicOperations.cpp
 
-    src/shape/shapes/disk.cpp
     src/shape/creators/diskCreator.cpp
     src/shape/creators/filler.cpp
     src/shape/creators/lineCreator.cpp
-    src/shape/creators/shapeCreator.cpp
+    src/shape/creators/donatCreator.cpp
+
+    src/shape/shapes/disk.cpp
+    src/shape/shapes/donat.cpp
 
     ${PROJECT_SOURCE_DIR}/src/color/gradient/intervalConditions.cpp
     src/color/gradient/conditionExecutor.cpp
     src/color/gradient/gradientCreator.cpp
+
     src/color/colorSetters/IttentGradientColorSetter.cpp
 
-    src/complimentWidgets/donat.cpp
+    src/complimentWidgets/colorIndicator.cpp
     src/complimentWidgets/circle.cpp
 
     inc/complimentWidgets/circle.h
-    inc/complimentWidgets/donat.h
+    inc/complimentWidgets/colorIndicator.h
 )
 
 

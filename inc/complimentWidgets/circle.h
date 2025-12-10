@@ -1,6 +1,6 @@
 #ifndef CIRCLE_H
 #define CIRCLE_H
-
+#pragma once
 #include <QPainter>
 #include <QPushButton>
 #include <QVBoxLayout>

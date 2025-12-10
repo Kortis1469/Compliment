@@ -40,7 +40,7 @@ std::vector<point> LineCreator::createLine(uint16_t x1, uint16_t y1, uint16_t x2
 
     if (!(dx == 0 && dy == 0)){
         float
-            err = 0,
+            err = 0,                                                                    
             df = isXMajor ? qAbs(dy / dx) : qAbs(dx / dy);
         int8_t
             signX = (dx >= 0) ? 1 : -1,
@@ -49,8 +49,7 @@ std::vector<point> LineCreator::createLine(uint16_t x1, uint16_t y1, uint16_t x2
         uint16_t
             *mainFlowValPtr = isXMajor ? &x1 : &y1;
 
-
-        while (!(x1 == x2 && y1 == y2)){
+         while (!(x1 == x2 && y1 == y2)){
             pts.push_back({x1,y1});
             err += df;
             if (err >= 0.5f){

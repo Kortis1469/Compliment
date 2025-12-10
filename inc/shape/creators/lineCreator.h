@@ -1,3 +1,4 @@
+#pragma once
 #include "basicOperations.h"
 #include "basicTypes.h"
 #include <algorithm>

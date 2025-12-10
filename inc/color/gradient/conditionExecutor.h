@@ -1,5 +1,4 @@
-#ifndef CONDITIONEXECUTOR_H
-#define CONDITIONEXECUTOR_H
+#pragma once
 #include <cmath>
 #include <QtCore>
 
@@ -16,5 +15,3 @@ class ResidualInfluenseZoneExecutor:ConditionExecutor{
 public:
     virtual int execute(double angleOfPoint, double angleGrid) override;
 };
-
-#endif // CONDITIONEXECUTOR_H

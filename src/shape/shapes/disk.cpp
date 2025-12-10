@@ -7,17 +7,17 @@ bool Disk::checkSetterType(ColorSetter &setter)
 
 uint16_t Disk::getXCenter()
 {
-    this->xCenter;
+    return this->xCenter;
 }
 
 uint16_t Disk::getYCenter()
 {
-    this->yCenter;
+    return this->yCenter;
 }
 
 uint16_t Disk::getRadius()
 {
-    this->radius;
+    return this->radius;
 }
 
 Disk::Disk(std::vector<point> shape, uint16_t xCenter, uint16_t yCenter, uint16_t radius) : 

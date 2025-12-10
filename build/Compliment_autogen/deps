@@ -46,6 +46,7 @@ Compliment_autogen/timestamp: \
 	C:/Qt/6.10.1/mingw_64/include/QtCore/QVariant \
 	C:/Qt/6.10.1/mingw_64/include/QtCore/QtCore \
 	C:/Qt/6.10.1/mingw_64/include/QtCore/QtCoreDepends \
+	C:/Qt/6.10.1/mingw_64/include/QtCore/QtGlobal \
 	C:/Qt/6.10.1/mingw_64/include/QtCore/q17memory.h \
 	C:/Qt/6.10.1/mingw_64/include/QtCore/q20algorithm.h \
 	C:/Qt/6.10.1/mingw_64/include/QtCore/q20chrono.h \
@@ -886,11 +887,13 @@ Compliment_autogen/timestamp: \
 	C:/Users/Korti/Desktop/Compliment/inc/base/shape.h \
 	C:/Users/Korti/Desktop/Compliment/inc/color/colorSetters/IttentGradientColorSetter.h \
 	C:/Users/Korti/Desktop/Compliment/inc/complimentWidgets/circle.h \
-	C:/Users/Korti/Desktop/Compliment/inc/complimentWidgets/donat.h \
+	C:/Users/Korti/Desktop/Compliment/inc/complimentWidgets/colorIndicator.h \
 	C:/Users/Korti/Desktop/Compliment/inc/shape/creators/diskCreator.h \
+	C:/Users/Korti/Desktop/Compliment/inc/shape/creators/donatCreator.h \
 	C:/Users/Korti/Desktop/Compliment/inc/shape/creators/filler.h \
 	C:/Users/Korti/Desktop/Compliment/inc/shape/creators/lineCreator.h \
 	C:/Users/Korti/Desktop/Compliment/inc/shape/shapes/disk.h \
+	C:/Users/Korti/Desktop/Compliment/inc/shape/shapes/donat.h \
 	C:/Users/Korti/Desktop/Compliment/src/base/basicoperations.cpp \
 	C:/Users/Korti/Desktop/Compliment/src/base/shape.cpp \
 	C:/Users/Korti/Desktop/Compliment/src/color/colorSetters/IttentGradientColorSetter.cpp \
@@ -898,11 +901,12 @@ Compliment_autogen/timestamp: \
 	C:/Users/Korti/Desktop/Compliment/src/color/gradient/gradientCreator.cpp \
 	C:/Users/Korti/Desktop/Compliment/src/color/gradient/intervalConditions.cpp \
 	C:/Users/Korti/Desktop/Compliment/src/complimentWidgets/circle.cpp \
-	C:/Users/Korti/Desktop/Compliment/src/complimentWidgets/donat.cpp \
+	C:/Users/Korti/Desktop/Compliment/src/complimentWidgets/colorIndicator.cpp \
 	C:/Users/Korti/Desktop/Compliment/src/main.cpp \
 	C:/Users/Korti/Desktop/Compliment/src/shape/creators/diskCreator.cpp \
+	C:/Users/Korti/Desktop/Compliment/src/shape/creators/donatCreator.cpp \
 	C:/Users/Korti/Desktop/Compliment/src/shape/creators/filler.cpp \
 	C:/Users/Korti/Desktop/Compliment/src/shape/creators/lineCreator.cpp \
-	C:/Users/Korti/Desktop/Compliment/src/shape/creators/shapeCreator.cpp \
 	C:/Users/Korti/Desktop/Compliment/src/shape/shapes/disk.cpp \
+	C:/Users/Korti/Desktop/Compliment/src/shape/shapes/donat.cpp \
 	C:/Program\ Files/CMake/bin/cmake.exe
