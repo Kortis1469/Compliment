@@ -10,15 +10,17 @@
 
 class SolidFiller{
     private:
-        LineCreator lineCr;
+        const LineCreator lineCr;
     public:
-        void fill(std::vector<point>& pts);
+        SolidFiller();
+        void fill(std::vector<point>& pts) const;
 };
 
 
 class DonatFiller{
     private:
-        LineCreator lineCr;
+        const LineCreator lineCr;
     public:
-        void fill(std::vector<point>& externalOutline, int innerRadius, int xc, int yc);
+        DonatFiller();
+        void fill(std::vector<point>& externalOutline, int innerRadius, int xc, int yc) const;
 };

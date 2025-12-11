@@ -19,8 +19,11 @@ void DonatCreator::setParametrs(uint16_t xc, uint16_t yc, uint16_t externalRadui
     this->innerRadius = innerRadius;
 }
 
-std::shared_ptr<Shape> DonatCreator::create()
-{
+std::shared_ptr<Shape> DonatCreator::create() const
+{   
+    DonatFiller filler;
+    CircleOutlineCreator circleOutlineCr;
+    
     point pCenter(xCenter,yCenter);
     std::vector<point> pts = circleOutlineCr.createOutline(pCenter.x,pCenter.y, radius);
     filler.fill(pts,innerRadius,xCenter,yCenter);

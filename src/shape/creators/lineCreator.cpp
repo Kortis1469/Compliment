@@ -2,7 +2,8 @@
 #include <vector>
 #include "lineCreator.h"
 
-std::vector<point> CircleOutlineCreator::createOutline(uint16_t xc, uint16_t yc, uint16_t radius){
+std::vector<point> CircleOutlineCreator::createOutline(uint16_t xc, uint16_t yc, uint16_t radius) const
+{
     std::vector<point> pts;
     uint16_t
         x = 0,
@@ -30,7 +31,7 @@ std::vector<point> CircleOutlineCreator::createOutline(uint16_t xc, uint16_t yc,
 }
 
 
-std::vector<point> LineCreator::createLine(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2)
+std::vector<point> LineCreator::createLine(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2) const
 {
     std::vector<point> pts;
     float

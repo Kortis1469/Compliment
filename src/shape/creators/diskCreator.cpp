@@ -3,7 +3,8 @@
 DiskCreator::DiskCreator(uint16_t xc, uint16_t yc, uint16_t r):
 xCenter(xc),
 yCenter(yc),
-radius(r)
+radius(r),
+circleOutlineCr()
 {
 }
 
@@ -29,11 +30,9 @@ void DiskCreator::sertRaduis(uint16_t r)
     this->radius = r;
 }
 
-std::shared_ptr<Shape> DiskCreator::create()
+std::shared_ptr<Shape> DiskCreator::create() const
 {   
-    
     point pCenter(xCenter,yCenter);
-
     std::vector<point> pts = circleOutlineCr.createOutline(pCenter.x,pCenter.y, radius);
     filler.fill(pts);
     std::shared_ptr<Shape> disk = std::make_shared<Disk>(pts,xCenter,yCenter,radius);

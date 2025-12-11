@@ -24,5 +24,5 @@ class Shape{
 
 class ShapeCreator{
     public:
-        virtual std::shared_ptr<Shape> create() = 0;
+        virtual std::shared_ptr<Shape> create() const = 0;
 };

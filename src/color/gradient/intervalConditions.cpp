@@ -12,7 +12,7 @@ FromLessToGreaterIntervalConditions::FromLessToGreaterIntervalConditions(double 
 
 }
 
-bool FromLessToGreaterIntervalConditions::checkPointForCondition(const double &value)
+bool FromLessToGreaterIntervalConditions::checkPointForCondition(const double &value) const
 {
     return (value>=leftValue && value<=rightValue);
 }
@@ -21,24 +21,26 @@ ExceptingFromLessToGreaterIntervalConditions::ExceptingFromLessToGreaterInterval
 
 }
 
-bool ExceptingFromLessToGreaterIntervalConditions::checkPointForCondition(const double &value)
+bool ExceptingFromLessToGreaterIntervalConditions::checkPointForCondition(const double &value) const
 {
     return (value>=leftValue || value<=rightValue);
 }
 
-std::shared_ptr<IntervalConditions> FromLessToGreaterIntervalConditionsFactory::createCondition(double leftValue, double rightValue){
+std::shared_ptr<IntervalConditions> FromLessToGreaterIntervalConditionsFactory::createCondition(double leftValue, double rightValue) const
+{
     std::shared_ptr<IntervalConditions> ptr(new FromLessToGreaterIntervalConditions(leftValue,rightValue));
     return ptr;
 }
 
-std::shared_ptr<IntervalConditions> ExceptingFromLessToGreaterIntervalConditionsFactory::createCondition(double leftValue, double rightValue)
+std::shared_ptr<IntervalConditions> ExceptingFromLessToGreaterIntervalConditionsFactory::createCondition(double leftValue, double rightValue) const
 {
     std::shared_ptr<IntervalConditions> ptr(new ExceptingFromLessToGreaterIntervalConditions(leftValue,rightValue));
     return ptr;
 }
 
-std::shared_ptr<IntervalConditions> CyclicRangeConditionDefiner::defineCondition(double leftValue, double rightValue)
+std::shared_ptr<IntervalConditions> CyclicRangeConditionDefiner::defineCondition(double leftValue, double rightValue) const
 {
+    std::shared_ptr<IntervalConditionsFactory> conditionFactory;
     if(leftValue<rightValue)
         conditionFactory = std::make_shared<FromLessToGreaterIntervalConditionsFactory>();
 
@@ -48,7 +50,3 @@ std::shared_ptr<IntervalConditions> CyclicRangeConditionDefiner::defineCondition
     return conditionFactory->createCondition(leftValue,rightValue);
 }
 
-std::shared_ptr<IntervalConditions> IntervalConditionsFactory::createCondition(double leftValue, double rightValue)
-{
-    return nullptr;
-}

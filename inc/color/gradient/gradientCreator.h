@@ -11,7 +11,7 @@ private:
     ResidualInfluenseZoneExecutor residualInfluenseExecutor;
 public:
     GradientPointColorSubtractor(ColorSettings setings);
-    uint8_t calculateColor(point p, point pCenter, int r);
+    uint8_t calculateColor(point p, point pCenter, int r) const;
 };
 
 class IttentGradientCreator{
@@ -23,5 +23,5 @@ protected:
 
 public:
     IttentGradientCreator(ColorSettings red, ColorSettings blue, ColorSettings green);
-    void colorizeWithGradient(std::vector<point> &circle, point pCenter, int r);
+    void colorizeWithGradient(std::vector<point> &circle, point pCenter, int r) const;
 };

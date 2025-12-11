@@ -6,7 +6,7 @@ GradientPointColorSubtractor::GradientPointColorSubtractor(ColorSettings setings
 
 }
 
-uint8_t GradientPointColorSubtractor::calculateColor(point p, point pCenter, int r)
+uint8_t GradientPointColorSubtractor::calculateColor(point p, point pCenter, int r) const
 {
     uint8_t color = 0;
     double angle = AngleCalculator::calculateAngle(p, pCenter);
@@ -50,7 +50,7 @@ IttentGradientCreator::IttentGradientCreator(ColorSettings redSettings, ColorSet
 
 }
 
-void IttentGradientCreator::colorizeWithGradient(std::vector<point> &circle, point pCenter, int r)
+void IttentGradientCreator::colorizeWithGradient(std::vector<point> &circle, point pCenter, int r) const
 {
     for(point & p : circle){
         p.color.setRed(red.calculateColor(p,pCenter, r));

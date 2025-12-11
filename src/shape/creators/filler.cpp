@@ -1,6 +1,12 @@
 #include "filler.h"
 
-void SolidFiller::fill(std::vector<point>& pts){
+SolidFiller::SolidFiller():
+lineCr()
+{
+}
+
+void SolidFiller::fill(std::vector<point> &pts) const
+{
 
     std::vector<point> buffer;
     std::vector<point> line;
@@ -18,8 +24,12 @@ void SolidFiller::fill(std::vector<point>& pts){
     pts = inerReg;
 }
 
+DonatFiller::DonatFiller():
+lineCr()
+{
+}
 
-void DonatFiller::fill(std::vector<point>& externalOutline, int innerRadius, int xc, int yc)
+void DonatFiller::fill(std::vector<point> &externalOutline, int innerRadius, int xc, int yc) const
 {
     std::vector<point> buffer;
     std::vector<point> line;
