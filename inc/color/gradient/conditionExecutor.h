@@ -4,14 +4,14 @@
 
 class ConditionExecutor{
 public:
-    virtual int execute(double angleOfPoint, double angleGrid) = 0;
+    virtual uint8_t execute(double angleOfPoint, double angleGrid) = 0;
 };
 
 class DominateZoneExecutor:ConditionExecutor{
 public:
-    virtual int execute(double angleOfPoint, double angleGrid) override;
+    virtual uint8_t execute(double angleOfPoint, double angleGrid) override;
 };
 class ResidualInfluenseZoneExecutor:ConditionExecutor{
 public:
-    virtual int execute(double angleOfPoint, double angleGrid) override;
+    virtual uint8_t execute(double angleOfPoint, double angleGrid) override;
 };

@@ -4,13 +4,13 @@
 
 class Disk:public Shape{
     protected:
-        uint16_t xCenter;
-        uint16_t yCenter;
-        uint16_t radius;
+        int16_t xCenter;
+        int16_t yCenter;
+        int16_t radius;
         virtual bool checkSetterType(ColorSetter& setter) override;
     public:
-        uint16_t getXCenter();
-        uint16_t getYCenter();
-        uint16_t getRadius();
-        Disk(std::vector<point> shape, uint16_t xCenter, uint16_t yCenter, uint16_t radius );
+        int16_t getXCenter();
+        int16_t getYCenter();
+        int16_t getRadius();
+        Disk(std::vector<point> shape, int16_t xCenter, int16_t yCenter, int16_t radius );
 };  

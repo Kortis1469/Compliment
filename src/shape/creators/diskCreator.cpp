@@ -33,10 +33,6 @@ std::shared_ptr<Shape> DiskCreator::create()
 {   
     
     point pCenter(xCenter,yCenter);
-    // IttentGradientCreator ittenGradientCreator(
-    //     {-PI/3, 2*PI/3, PI/3, PI/3},
-    //     {2*PI/3,PI/6,5*PI/6,PI/6},
-    //     {PI/6,-PI/3,PI/6,PI/3});
 
     std::vector<point> pts = circleOutlineCr.createOutline(pCenter.x,pCenter.y, radius);
     filler.fill(pts);

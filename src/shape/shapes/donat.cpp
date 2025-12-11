@@ -5,17 +5,17 @@ bool Donat::checkSetterType(ColorSetter &setter)
     return false;
 }
 
-uint16_t Donat::getInnerRadius()
+int16_t Donat::getInnerRadius()
 {
-    return this->innerRadius;
+    return innerRadius;
 }
 
 Donat::Donat(
             std::vector<point> shape, 
-            uint16_t xCenter, 
-            uint16_t yCenter, 
-            uint16_t radius, 
-            uint16_t innerRadius)
+            int16_t xCenter, 
+            int16_t yCenter, 
+            int16_t radius, 
+            int16_t innerRadius)
 
 :Disk(shape, xCenter, yCenter, radius),
 innerRadius(innerRadius)                                                                                                          

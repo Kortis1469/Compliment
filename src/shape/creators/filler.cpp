@@ -7,7 +7,7 @@ void SolidFiller::fill(std::vector<point>& pts){
     std::vector<point> inerReg = pts;
     std::sort(inerReg.begin(),inerReg.end(),ComporatorLinScan::compare);
 
-    for(int i = 0; i<inerReg.size()-1;i++){
+    for(size_t i = 0; i<inerReg.size()-1;i++){
         if(inerReg[i].y == inerReg[i+1].y){
             line = lineCr.createLine(inerReg[i].x,inerReg[i].y,inerReg[i+1].x,inerReg[i].y);
             buffer.insert(buffer.end(), line.begin(), line.end());
@@ -21,15 +21,13 @@ void SolidFiller::fill(std::vector<point>& pts){
 
 void DonatFiller::fill(std::vector<point>& externalOutline, int innerRadius, int xc, int yc)
 {
-    std::vector<point> bufferPoints;
-    std::vector<point> bufferLine;
     std::vector<point> buffer;
     std::vector<point> line;
     std::vector<point> inerReg = externalOutline;
     std::sort(inerReg.begin(),inerReg.end(),ComporatorLinScan::compare);
 
 
-    for(int i = 0; i<inerReg.size()-1;i++){
+    for(size_t i = 0; i<inerReg.size()-1;i++){
         if(inerReg[i].y == inerReg[i+1].y){
             line = lineCr.createLine(inerReg[i].x,inerReg[i].y,inerReg[i+1].x,inerReg[i].y);
             buffer.insert(buffer.end(), line.begin(), line.end());
