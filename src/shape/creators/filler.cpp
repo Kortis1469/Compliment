@@ -1,9 +1,5 @@
 #include "filler.h"
 
-SolidFiller::SolidFiller():
-lineCr()
-{
-}
 
 void SolidFiller::fill(std::vector<point> &pts) const
 {
@@ -24,10 +20,7 @@ void SolidFiller::fill(std::vector<point> &pts) const
     pts = inerReg;
 }
 
-DonatFiller::DonatFiller():
-lineCr()
-{
-}
+
 
 void DonatFiller::fill(std::vector<point> &externalOutline, int innerRadius, int xc, int yc) const
 {
@@ -62,4 +55,9 @@ void DonatFiller::fill(std::vector<point> &externalOutline, int innerRadius, int
 
 
     externalOutline = inerReg;
+}
+
+Filler::Filler():
+lineCr()
+{
 }

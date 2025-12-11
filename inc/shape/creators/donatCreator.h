@@ -5,8 +5,8 @@
 #include "donat.h"
 
 class DonatCreator: public DiskCreator{
-    protected:
-        
+    private:
+        const DonatFiller filler;
         uint16_t innerRadius;
     public:
         void setParametrs(uint16_t xc, uint16_t yc, uint16_t r) = delete; 

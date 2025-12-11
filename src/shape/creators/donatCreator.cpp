@@ -2,7 +2,8 @@
 
 DonatCreator::DonatCreator(uint16_t xc, uint16_t yc, uint16_t externalRaduis, uint16_t innerRadius):
 DiskCreator(xc,yc,externalRaduis),
-innerRadius(innerRadius)
+innerRadius(innerRadius),
+filler()
 {
 }
 
@@ -21,7 +22,6 @@ void DonatCreator::setParametrs(uint16_t xc, uint16_t yc, uint16_t externalRadui
 
 std::shared_ptr<Shape> DonatCreator::create() const
 {   
-    DonatFiller filler;
     CircleOutlineCreator circleOutlineCr;
     
     point pCenter(xCenter,yCenter);

@@ -4,10 +4,10 @@
 #include "disk.h"
 
 class DiskCreator: public ShapeCreator{
+    private:
+        const SolidFiller filler;
     protected:
         const CircleOutlineCreator circleOutlineCr;
-        const SolidFiller filler;
-        
         uint16_t xCenter;
         uint16_t yCenter;
         uint16_t radius;

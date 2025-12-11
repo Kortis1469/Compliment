@@ -1,26 +1,21 @@
 #pragma once
 #include "lineCreator.h"
 
-/*
-    Нужно сделать общего предка для филлеров
-    И навесить защиту в виде проверки что входит в fill 
-*/
-
-
-
-class SolidFiller{
-    private:
+class Filler{
+    protected:
         const LineCreator lineCr;
     public:
-        SolidFiller();
+        Filler();
+};
+
+
+class SolidFiller: public Filler{
+    public:
         void fill(std::vector<point>& pts) const;
 };
 
 
-class DonatFiller{
-    private:
-        const LineCreator lineCr;
+class DonatFiller: public Filler{
     public:
-        DonatFiller();
         void fill(std::vector<point>& externalOutline, int innerRadius, int xc, int yc) const;
 };
