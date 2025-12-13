@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\Compliment.dir/objects.a
-C:\Qt\Tools\mingw1310_64\bin\ar.exe qc CMakeFiles\Compliment.dir/objects.a @CMakeFiles\Compliment.dir\objects1.rsp
-C:\Qt\Tools\mingw1310_64\bin\g++.exe -mwindows -Wl,--whole-archive CMakeFiles\Compliment.dir/objects.a -Wl,--no-whole-archive -o Compliment.exe -Wl,--out-implib,libCompliment.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Compliment.dir\linkLibs.rsp
