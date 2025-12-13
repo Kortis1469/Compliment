@@ -452,6 +452,33 @@ Compliment_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/Compliment_autogen/mocs_compilation.cpp.s
 .PHONY : Compliment_autogen/mocs_compilation.cpp.s
 
+src/base/angle.obj: src/base/angle.cpp.obj
+.PHONY : src/base/angle.obj
+
+# target to build an object file
+src/base/angle.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/base/angle.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComplimentTests.dir\build.make CMakeFiles/ComplimentTests.dir/src/base/angle.cpp.obj
+.PHONY : src/base/angle.cpp.obj
+
+src/base/angle.i: src/base/angle.cpp.i
+.PHONY : src/base/angle.i
+
+# target to preprocess a source file
+src/base/angle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/base/angle.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComplimentTests.dir\build.make CMakeFiles/ComplimentTests.dir/src/base/angle.cpp.i
+.PHONY : src/base/angle.cpp.i
+
+src/base/angle.s: src/base/angle.cpp.s
+.PHONY : src/base/angle.s
+
+# target to generate assembly for a file
+src/base/angle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/base/angle.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComplimentTests.dir\build.make CMakeFiles/ComplimentTests.dir/src/base/angle.cpp.s
+.PHONY : src/base/angle.cpp.s
+
 src/base/basicoperations.obj: src/base/basicoperations.cpp.obj
 .PHONY : src/base/basicoperations.obj
 
@@ -812,6 +839,30 @@ src/shape/shapes/donat.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Compliment.dir\build.make CMakeFiles/Compliment.dir/src/shape/shapes/donat.cpp.s
 .PHONY : src/shape/shapes/donat.cpp.s
 
+tests/test_angle.obj: tests/test_angle.cpp.obj
+.PHONY : tests/test_angle.obj
+
+# target to build an object file
+tests/test_angle.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComplimentTests.dir\build.make CMakeFiles/ComplimentTests.dir/tests/test_angle.cpp.obj
+.PHONY : tests/test_angle.cpp.obj
+
+tests/test_angle.i: tests/test_angle.cpp.i
+.PHONY : tests/test_angle.i
+
+# target to preprocess a source file
+tests/test_angle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComplimentTests.dir\build.make CMakeFiles/ComplimentTests.dir/tests/test_angle.cpp.i
+.PHONY : tests/test_angle.cpp.i
+
+tests/test_angle.s: tests/test_angle.cpp.s
+.PHONY : tests/test_angle.s
+
+# target to generate assembly for a file
+tests/test_angle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComplimentTests.dir\build.make CMakeFiles/ComplimentTests.dir/tests/test_angle.cpp.s
+.PHONY : tests/test_angle.cpp.s
+
 tests/test_main.obj: tests/test_main.cpp.obj
 .PHONY : tests/test_main.obj
 
@@ -873,6 +924,9 @@ help:
 	@echo ... Compliment_autogen/mocs_compilation.obj
 	@echo ... Compliment_autogen/mocs_compilation.i
 	@echo ... Compliment_autogen/mocs_compilation.s
+	@echo ... src/base/angle.obj
+	@echo ... src/base/angle.i
+	@echo ... src/base/angle.s
 	@echo ... src/base/basicoperations.obj
 	@echo ... src/base/basicoperations.i
 	@echo ... src/base/basicoperations.s
@@ -918,6 +972,9 @@ help:
 	@echo ... src/shape/shapes/donat.obj
 	@echo ... src/shape/shapes/donat.i
 	@echo ... src/shape/shapes/donat.s
+	@echo ... tests/test_angle.obj
+	@echo ... tests/test_angle.i
+	@echo ... tests/test_angle.s
 	@echo ... tests/test_main.obj
 	@echo ... tests/test_main.i
 	@echo ... tests/test_main.s

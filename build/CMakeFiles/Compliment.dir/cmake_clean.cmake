@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "Compliment_autogen"
   "CMakeFiles/Compliment.dir/Compliment_autogen/mocs_compilation.cpp.obj"
   "CMakeFiles/Compliment.dir/Compliment_autogen/mocs_compilation.cpp.obj.d"
+  "CMakeFiles/Compliment.dir/src/base/angle.cpp.obj"
+  "CMakeFiles/Compliment.dir/src/base/angle.cpp.obj.d"
   "CMakeFiles/Compliment.dir/src/base/basicoperations.cpp.obj"
   "CMakeFiles/Compliment.dir/src/base/basicoperations.cpp.obj.d"
   "CMakeFiles/Compliment.dir/src/base/shape.cpp.obj"

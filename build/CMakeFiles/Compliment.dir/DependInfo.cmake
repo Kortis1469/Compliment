@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "Compliment_autogen/timestamp" "custom" "Compliment_autogen/deps"
   "C:/Users/Korti/Desktop/Compliment/build/Compliment_autogen/mocs_compilation.cpp" "CMakeFiles/Compliment.dir/Compliment_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/Compliment.dir/Compliment_autogen/mocs_compilation.cpp.obj.d"
+  "C:/Users/Korti/Desktop/Compliment/src/base/angle.cpp" "CMakeFiles/Compliment.dir/src/base/angle.cpp.obj" "gcc" "CMakeFiles/Compliment.dir/src/base/angle.cpp.obj.d"
   "C:/Users/Korti/Desktop/Compliment/src/base/basicoperations.cpp" "CMakeFiles/Compliment.dir/src/base/basicoperations.cpp.obj" "gcc" "CMakeFiles/Compliment.dir/src/base/basicoperations.cpp.obj.d"
   "C:/Users/Korti/Desktop/Compliment/src/base/shape.cpp" "CMakeFiles/Compliment.dir/src/base/shape.cpp.obj" "gcc" "CMakeFiles/Compliment.dir/src/base/shape.cpp.obj.d"
   "C:/Users/Korti/Desktop/Compliment/src/color/colorSetters/IttentGradientColorSetter.cpp" "CMakeFiles/Compliment.dir/src/color/colorSetters/IttentGradientColorSetter.cpp.obj" "gcc" "CMakeFiles/Compliment.dir/src/color/colorSetters/IttentGradientColorSetter.cpp.obj.d"

@@ -135,11 +135,26 @@ CMakeFiles/Compliment.dir/src/base/basicoperations.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Compliment.dir/src/base/basicoperations.cpp.s"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Korti\Desktop\Compliment\src\base\basicoperations.cpp -o CMakeFiles\Compliment.dir\src\base\basicoperations.cpp.s
 
+CMakeFiles/Compliment.dir/src/base/angle.cpp.obj: CMakeFiles/Compliment.dir/flags.make
+CMakeFiles/Compliment.dir/src/base/angle.cpp.obj: CMakeFiles/Compliment.dir/includes_CXX.rsp
+CMakeFiles/Compliment.dir/src/base/angle.cpp.obj: C:/Users/Korti/Desktop/Compliment/src/base/angle.cpp
+CMakeFiles/Compliment.dir/src/base/angle.cpp.obj: CMakeFiles/Compliment.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Compliment.dir/src/base/angle.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Compliment.dir/src/base/angle.cpp.obj -MF CMakeFiles\Compliment.dir\src\base\angle.cpp.obj.d -o CMakeFiles\Compliment.dir\src\base\angle.cpp.obj -c C:\Users\Korti\Desktop\Compliment\src\base\angle.cpp
+
+CMakeFiles/Compliment.dir/src/base/angle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Compliment.dir/src/base/angle.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Korti\Desktop\Compliment\src\base\angle.cpp > CMakeFiles\Compliment.dir\src\base\angle.cpp.i
+
+CMakeFiles/Compliment.dir/src/base/angle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Compliment.dir/src/base/angle.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Korti\Desktop\Compliment\src\base\angle.cpp -o CMakeFiles\Compliment.dir\src\base\angle.cpp.s
+
 CMakeFiles/Compliment.dir/src/shape/creators/diskCreator.cpp.obj: CMakeFiles/Compliment.dir/flags.make
 CMakeFiles/Compliment.dir/src/shape/creators/diskCreator.cpp.obj: CMakeFiles/Compliment.dir/includes_CXX.rsp
 CMakeFiles/Compliment.dir/src/shape/creators/diskCreator.cpp.obj: C:/Users/Korti/Desktop/Compliment/src/shape/creators/diskCreator.cpp
 CMakeFiles/Compliment.dir/src/shape/creators/diskCreator.cpp.obj: CMakeFiles/Compliment.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Compliment.dir/src/shape/creators/diskCreator.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Compliment.dir/src/shape/creators/diskCreator.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Compliment.dir/src/shape/creators/diskCreator.cpp.obj -MF CMakeFiles\Compliment.dir\src\shape\creators\diskCreator.cpp.obj.d -o CMakeFiles\Compliment.dir\src\shape\creators\diskCreator.cpp.obj -c C:\Users\Korti\Desktop\Compliment\src\shape\creators\diskCreator.cpp
 
 CMakeFiles/Compliment.dir/src/shape/creators/diskCreator.cpp.i: cmake_force
@@ -154,7 +169,7 @@ CMakeFiles/Compliment.dir/src/shape/creators/filler.cpp.obj: CMakeFiles/Complime
 CMakeFiles/Compliment.dir/src/shape/creators/filler.cpp.obj: CMakeFiles/Compliment.dir/includes_CXX.rsp
 CMakeFiles/Compliment.dir/src/shape/creators/filler.cpp.obj: C:/Users/Korti/Desktop/Compliment/src/shape/creators/filler.cpp
 CMakeFiles/Compliment.dir/src/shape/creators/filler.cpp.obj: CMakeFiles/Compliment.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Compliment.dir/src/shape/creators/filler.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Compliment.dir/src/shape/creators/filler.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Compliment.dir/src/shape/creators/filler.cpp.obj -MF CMakeFiles\Compliment.dir\src\shape\creators\filler.cpp.obj.d -o CMakeFiles\Compliment.dir\src\shape\creators\filler.cpp.obj -c C:\Users\Korti\Desktop\Compliment\src\shape\creators\filler.cpp
 
 CMakeFiles/Compliment.dir/src/shape/creators/filler.cpp.i: cmake_force
@@ -169,7 +184,7 @@ CMakeFiles/Compliment.dir/src/shape/creators/lineCreator.cpp.obj: CMakeFiles/Com
 CMakeFiles/Compliment.dir/src/shape/creators/lineCreator.cpp.obj: CMakeFiles/Compliment.dir/includes_CXX.rsp
 CMakeFiles/Compliment.dir/src/shape/creators/lineCreator.cpp.obj: C:/Users/Korti/Desktop/Compliment/src/shape/creators/lineCreator.cpp
 CMakeFiles/Compliment.dir/src/shape/creators/lineCreator.cpp.obj: CMakeFiles/Compliment.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Compliment.dir/src/shape/creators/lineCreator.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Compliment.dir/src/shape/creators/lineCreator.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Compliment.dir/src/shape/creators/lineCreator.cpp.obj -MF CMakeFiles\Compliment.dir\src\shape\creators\lineCreator.cpp.obj.d -o CMakeFiles\Compliment.dir\src\shape\creators\lineCreator.cpp.obj -c C:\Users\Korti\Desktop\Compliment\src\shape\creators\lineCreator.cpp
 
 CMakeFiles/Compliment.dir/src/shape/creators/lineCreator.cpp.i: cmake_force
@@ -184,7 +199,7 @@ CMakeFiles/Compliment.dir/src/shape/creators/donatCreator.cpp.obj: CMakeFiles/Co
 CMakeFiles/Compliment.dir/src/shape/creators/donatCreator.cpp.obj: CMakeFiles/Compliment.dir/includes_CXX.rsp
 CMakeFiles/Compliment.dir/src/shape/creators/donatCreator.cpp.obj: C:/Users/Korti/Desktop/Compliment/src/shape/creators/donatCreator.cpp
 CMakeFiles/Compliment.dir/src/shape/creators/donatCreator.cpp.obj: CMakeFiles/Compliment.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Compliment.dir/src/shape/creators/donatCreator.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Compliment.dir/src/shape/creators/donatCreator.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Compliment.dir/src/shape/creators/donatCreator.cpp.obj -MF CMakeFiles\Compliment.dir\src\shape\creators\donatCreator.cpp.obj.d -o CMakeFiles\Compliment.dir\src\shape\creators\donatCreator.cpp.obj -c C:\Users\Korti\Desktop\Compliment\src\shape\creators\donatCreator.cpp
 
 CMakeFiles/Compliment.dir/src/shape/creators/donatCreator.cpp.i: cmake_force
@@ -199,7 +214,7 @@ CMakeFiles/Compliment.dir/src/shape/shapes/disk.cpp.obj: CMakeFiles/Compliment.d
 CMakeFiles/Compliment.dir/src/shape/shapes/disk.cpp.obj: CMakeFiles/Compliment.dir/includes_CXX.rsp
 CMakeFiles/Compliment.dir/src/shape/shapes/disk.cpp.obj: C:/Users/Korti/Desktop/Compliment/src/shape/shapes/disk.cpp
 CMakeFiles/Compliment.dir/src/shape/shapes/disk.cpp.obj: CMakeFiles/Compliment.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Compliment.dir/src/shape/shapes/disk.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Compliment.dir/src/shape/shapes/disk.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Compliment.dir/src/shape/shapes/disk.cpp.obj -MF CMakeFiles\Compliment.dir\src\shape\shapes\disk.cpp.obj.d -o CMakeFiles\Compliment.dir\src\shape\shapes\disk.cpp.obj -c C:\Users\Korti\Desktop\Compliment\src\shape\shapes\disk.cpp
 
 CMakeFiles/Compliment.dir/src/shape/shapes/disk.cpp.i: cmake_force
@@ -214,7 +229,7 @@ CMakeFiles/Compliment.dir/src/shape/shapes/donat.cpp.obj: CMakeFiles/Compliment.
 CMakeFiles/Compliment.dir/src/shape/shapes/donat.cpp.obj: CMakeFiles/Compliment.dir/includes_CXX.rsp
 CMakeFiles/Compliment.dir/src/shape/shapes/donat.cpp.obj: C:/Users/Korti/Desktop/Compliment/src/shape/shapes/donat.cpp
 CMakeFiles/Compliment.dir/src/shape/shapes/donat.cpp.obj: CMakeFiles/Compliment.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Compliment.dir/src/shape/shapes/donat.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Compliment.dir/src/shape/shapes/donat.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Compliment.dir/src/shape/shapes/donat.cpp.obj -MF CMakeFiles\Compliment.dir\src\shape\shapes\donat.cpp.obj.d -o CMakeFiles\Compliment.dir\src\shape\shapes\donat.cpp.obj -c C:\Users\Korti\Desktop\Compliment\src\shape\shapes\donat.cpp
 
 CMakeFiles/Compliment.dir/src/shape/shapes/donat.cpp.i: cmake_force
@@ -229,7 +244,7 @@ CMakeFiles/Compliment.dir/src/color/gradient/intervalConditions.cpp.obj: CMakeFi
 CMakeFiles/Compliment.dir/src/color/gradient/intervalConditions.cpp.obj: CMakeFiles/Compliment.dir/includes_CXX.rsp
 CMakeFiles/Compliment.dir/src/color/gradient/intervalConditions.cpp.obj: C:/Users/Korti/Desktop/Compliment/src/color/gradient/intervalConditions.cpp
 CMakeFiles/Compliment.dir/src/color/gradient/intervalConditions.cpp.obj: CMakeFiles/Compliment.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Compliment.dir/src/color/gradient/intervalConditions.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Compliment.dir/src/color/gradient/intervalConditions.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Compliment.dir/src/color/gradient/intervalConditions.cpp.obj -MF CMakeFiles\Compliment.dir\src\color\gradient\intervalConditions.cpp.obj.d -o CMakeFiles\Compliment.dir\src\color\gradient\intervalConditions.cpp.obj -c C:\Users\Korti\Desktop\Compliment\src\color\gradient\intervalConditions.cpp
 
 CMakeFiles/Compliment.dir/src/color/gradient/intervalConditions.cpp.i: cmake_force
@@ -244,7 +259,7 @@ CMakeFiles/Compliment.dir/src/color/gradient/conditionExecutor.cpp.obj: CMakeFil
 CMakeFiles/Compliment.dir/src/color/gradient/conditionExecutor.cpp.obj: CMakeFiles/Compliment.dir/includes_CXX.rsp
 CMakeFiles/Compliment.dir/src/color/gradient/conditionExecutor.cpp.obj: C:/Users/Korti/Desktop/Compliment/src/color/gradient/conditionExecutor.cpp
 CMakeFiles/Compliment.dir/src/color/gradient/conditionExecutor.cpp.obj: CMakeFiles/Compliment.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Compliment.dir/src/color/gradient/conditionExecutor.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Compliment.dir/src/color/gradient/conditionExecutor.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Compliment.dir/src/color/gradient/conditionExecutor.cpp.obj -MF CMakeFiles\Compliment.dir\src\color\gradient\conditionExecutor.cpp.obj.d -o CMakeFiles\Compliment.dir\src\color\gradient\conditionExecutor.cpp.obj -c C:\Users\Korti\Desktop\Compliment\src\color\gradient\conditionExecutor.cpp
 
 CMakeFiles/Compliment.dir/src/color/gradient/conditionExecutor.cpp.i: cmake_force
@@ -259,7 +274,7 @@ CMakeFiles/Compliment.dir/src/color/gradient/gradientCreator.cpp.obj: CMakeFiles
 CMakeFiles/Compliment.dir/src/color/gradient/gradientCreator.cpp.obj: CMakeFiles/Compliment.dir/includes_CXX.rsp
 CMakeFiles/Compliment.dir/src/color/gradient/gradientCreator.cpp.obj: C:/Users/Korti/Desktop/Compliment/src/color/gradient/gradientCreator.cpp
 CMakeFiles/Compliment.dir/src/color/gradient/gradientCreator.cpp.obj: CMakeFiles/Compliment.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Compliment.dir/src/color/gradient/gradientCreator.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Compliment.dir/src/color/gradient/gradientCreator.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Compliment.dir/src/color/gradient/gradientCreator.cpp.obj -MF CMakeFiles\Compliment.dir\src\color\gradient\gradientCreator.cpp.obj.d -o CMakeFiles\Compliment.dir\src\color\gradient\gradientCreator.cpp.obj -c C:\Users\Korti\Desktop\Compliment\src\color\gradient\gradientCreator.cpp
 
 CMakeFiles/Compliment.dir/src/color/gradient/gradientCreator.cpp.i: cmake_force
@@ -274,7 +289,7 @@ CMakeFiles/Compliment.dir/src/color/colorSetters/IttentGradientColorSetter.cpp.o
 CMakeFiles/Compliment.dir/src/color/colorSetters/IttentGradientColorSetter.cpp.obj: CMakeFiles/Compliment.dir/includes_CXX.rsp
 CMakeFiles/Compliment.dir/src/color/colorSetters/IttentGradientColorSetter.cpp.obj: C:/Users/Korti/Desktop/Compliment/src/color/colorSetters/IttentGradientColorSetter.cpp
 CMakeFiles/Compliment.dir/src/color/colorSetters/IttentGradientColorSetter.cpp.obj: CMakeFiles/Compliment.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Compliment.dir/src/color/colorSetters/IttentGradientColorSetter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Compliment.dir/src/color/colorSetters/IttentGradientColorSetter.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Compliment.dir/src/color/colorSetters/IttentGradientColorSetter.cpp.obj -MF CMakeFiles\Compliment.dir\src\color\colorSetters\IttentGradientColorSetter.cpp.obj.d -o CMakeFiles\Compliment.dir\src\color\colorSetters\IttentGradientColorSetter.cpp.obj -c C:\Users\Korti\Desktop\Compliment\src\color\colorSetters\IttentGradientColorSetter.cpp
 
 CMakeFiles/Compliment.dir/src/color/colorSetters/IttentGradientColorSetter.cpp.i: cmake_force
@@ -289,7 +304,7 @@ CMakeFiles/Compliment.dir/src/complimentWidgets/colorIndicator.cpp.obj: CMakeFil
 CMakeFiles/Compliment.dir/src/complimentWidgets/colorIndicator.cpp.obj: CMakeFiles/Compliment.dir/includes_CXX.rsp
 CMakeFiles/Compliment.dir/src/complimentWidgets/colorIndicator.cpp.obj: C:/Users/Korti/Desktop/Compliment/src/complimentWidgets/colorIndicator.cpp
 CMakeFiles/Compliment.dir/src/complimentWidgets/colorIndicator.cpp.obj: CMakeFiles/Compliment.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Compliment.dir/src/complimentWidgets/colorIndicator.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Compliment.dir/src/complimentWidgets/colorIndicator.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Compliment.dir/src/complimentWidgets/colorIndicator.cpp.obj -MF CMakeFiles\Compliment.dir\src\complimentWidgets\colorIndicator.cpp.obj.d -o CMakeFiles\Compliment.dir\src\complimentWidgets\colorIndicator.cpp.obj -c C:\Users\Korti\Desktop\Compliment\src\complimentWidgets\colorIndicator.cpp
 
 CMakeFiles/Compliment.dir/src/complimentWidgets/colorIndicator.cpp.i: cmake_force
@@ -304,7 +319,7 @@ CMakeFiles/Compliment.dir/src/complimentWidgets/circle.cpp.obj: CMakeFiles/Compl
 CMakeFiles/Compliment.dir/src/complimentWidgets/circle.cpp.obj: CMakeFiles/Compliment.dir/includes_CXX.rsp
 CMakeFiles/Compliment.dir/src/complimentWidgets/circle.cpp.obj: C:/Users/Korti/Desktop/Compliment/src/complimentWidgets/circle.cpp
 CMakeFiles/Compliment.dir/src/complimentWidgets/circle.cpp.obj: CMakeFiles/Compliment.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Compliment.dir/src/complimentWidgets/circle.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Compliment.dir/src/complimentWidgets/circle.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Compliment.dir/src/complimentWidgets/circle.cpp.obj -MF CMakeFiles\Compliment.dir\src\complimentWidgets\circle.cpp.obj.d -o CMakeFiles\Compliment.dir\src\complimentWidgets\circle.cpp.obj -c C:\Users\Korti\Desktop\Compliment\src\complimentWidgets\circle.cpp
 
 CMakeFiles/Compliment.dir/src/complimentWidgets/circle.cpp.i: cmake_force
@@ -321,6 +336,7 @@ Compliment_OBJECTS = \
 "CMakeFiles/Compliment.dir/src/main.cpp.obj" \
 "CMakeFiles/Compliment.dir/src/base/shape.cpp.obj" \
 "CMakeFiles/Compliment.dir/src/base/basicoperations.cpp.obj" \
+"CMakeFiles/Compliment.dir/src/base/angle.cpp.obj" \
 "CMakeFiles/Compliment.dir/src/shape/creators/diskCreator.cpp.obj" \
 "CMakeFiles/Compliment.dir/src/shape/creators/filler.cpp.obj" \
 "CMakeFiles/Compliment.dir/src/shape/creators/lineCreator.cpp.obj" \
@@ -341,6 +357,7 @@ Compliment.exe: CMakeFiles/Compliment.dir/Compliment_autogen/mocs_compilation.cp
 Compliment.exe: CMakeFiles/Compliment.dir/src/main.cpp.obj
 Compliment.exe: CMakeFiles/Compliment.dir/src/base/shape.cpp.obj
 Compliment.exe: CMakeFiles/Compliment.dir/src/base/basicoperations.cpp.obj
+Compliment.exe: CMakeFiles/Compliment.dir/src/base/angle.cpp.obj
 Compliment.exe: CMakeFiles/Compliment.dir/src/shape/creators/diskCreator.cpp.obj
 Compliment.exe: CMakeFiles/Compliment.dir/src/shape/creators/filler.cpp.obj
 Compliment.exe: CMakeFiles/Compliment.dir/src/shape/creators/lineCreator.cpp.obj
@@ -361,7 +378,7 @@ Compliment.exe: C:/Qt/6.10.1/mingw_64/lib/libQt6EntryPoint.a
 Compliment.exe: CMakeFiles/Compliment.dir/linkLibs.rsp
 Compliment.exe: CMakeFiles/Compliment.dir/objects1.rsp
 Compliment.exe: CMakeFiles/Compliment.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable Compliment.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Korti\Desktop\Compliment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable Compliment.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Compliment.dir\link.txt --verbose=$(VERBOSE)
 	"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Korti/Desktop/Compliment/build
 	"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Qt/6.10.1/mingw_64/bin/Qt6Core.dll C:/Users/Korti/Desktop/Compliment/build

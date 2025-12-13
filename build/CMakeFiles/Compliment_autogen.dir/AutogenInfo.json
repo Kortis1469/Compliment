@@ -355,6 +355,7 @@
 	"SETTINGS_FILE" : "C:/Users/Korti/Desktop/Compliment/build/CMakeFiles/Compliment_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "C:/Users/Korti/Desktop/Compliment/src/base/angle.cpp", "MU", null ],
 		[
 			"C:/Users/Korti/Desktop/Compliment/src/base/basicoperations.cpp",
 			"MU",

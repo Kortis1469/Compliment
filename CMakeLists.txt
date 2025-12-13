@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-cmake_policy(SET CMP0135 NEW) # убираем warning FetchContent
+cmake_policy(SET CMP0135 NEW)
 
 project(Compliment VERSION 0.1 LANGUAGES CXX)
 
@@ -63,6 +63,7 @@ set(PROJECT_SOURCES
    
     src/base/shape.cpp
     src/base/basicOperations.cpp
+    src/base/angle.cpp
 
     src/shape/creators/diskCreator.cpp
     src/shape/creators/filler.cpp
@@ -100,18 +101,28 @@ qt_finalize_executable(Compliment)
 # -------------------- TESTS --------------------
 
 add_executable(ComplimentTests
+    src/base/angle.cpp
     tests/test_main.cpp
+    tests/test_angle.cpp
 )
+
+
+# set_target_properties(ComplimentTests PROPERTIES
+#     AUTOMOC OFF
+#     AUTOUIC OFF
+#     AUTORCC OFF
+# )
 
 target_link_libraries(ComplimentTests
     PRIVATE
-    GTest::gtest
-    GTest::gtest_main
+    gtest_main
+    gtest
     Qt6::Widgets
 )
 
 include(GoogleTest)
 gtest_discover_tests(ComplimentTests)
+
 
 # -------------------- POST BUILD (QT DLLS) --------------------
 

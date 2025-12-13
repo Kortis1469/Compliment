@@ -12,43 +12,7 @@ struct point{
     point(int x, int y) : x(x), y(y), color("#000000") {}
 };
 
-// class angle{
-//     private:
-//         double value;
-//         double biasRadians(double angle);
 
-//     public:
-//         template <typename T>
-//         angle operator=(const T& a);
-
-//         template <typename T>
-//         angle operator+(const T& a);
-
-//         template <typename T>
-//         angle operator-(const T& a);
-
-//         template <typename T>
-//         angle operator*(const T& a);
-
-//         template <typename T>
-//         angle operator/(const T& a);
-
-//         template <typename T>
-//         angle operator<(const T& a);
-
-//         template <typename T>
-//         angle operator>(const T& a);
-
-//         template <typename T>
-//         angle operator<=(const T& a);
-
-//         template <typename T>
-//         angle operator>=(const T& a);
-
-//         template <typename T>
-//         angle operator==(const T& a);
-
-// };
 
 struct ColorSettings{
     double greaterThanSignDominateZone;

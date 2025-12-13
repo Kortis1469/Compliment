@@ -898,6 +898,7 @@ Compliment_autogen/timestamp: \
 	C:/Users/Korti/Desktop/Compliment/inc/shape/creators/lineCreator.h \
 	C:/Users/Korti/Desktop/Compliment/inc/shape/shapes/disk.h \
 	C:/Users/Korti/Desktop/Compliment/inc/shape/shapes/donat.h \
+	C:/Users/Korti/Desktop/Compliment/src/base/angle.cpp \
 	C:/Users/Korti/Desktop/Compliment/src/base/basicoperations.cpp \
 	C:/Users/Korti/Desktop/Compliment/src/base/shape.cpp \
 	C:/Users/Korti/Desktop/Compliment/src/color/colorSetters/IttentGradientColorSetter.cpp \
