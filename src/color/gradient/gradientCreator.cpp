@@ -8,29 +8,39 @@ GradientPointColorSubtractor::GradientPointColorSubtractor(ColorSettings setings
 
 uint8_t GradientPointColorSubtractor::calculateColor(point p, point pCenter, int r) const
 {
-    uint8_t color = 0;
-    double angle = AngleCalculator::calculateAngle(p, pCenter);
-    double
+    uint8_t 
+        color = 0;
+    
+    double 
+        angle = AngleCalculator::calculateAngle(p, pCenter),
         rightResidualGrid = AngleAdder::sumAngle(settings.greaterThanSignDominateZone, settings.rigthLengthResidualInfluenseZone),
-        leftResidualGrid = AngleAdder::sumAngle(settings.lessThanSignDominateZone, -settings.leftLengthResidualInfluenseZone);
+        leftResidualGrid = AngleAdder::sumAngle(settings.lessThanSignDominateZone, -settings.leftLengthResidualInfluenseZone),
+        dominateL = settings.lessThanSignDominateZone,
+        dominateG = settings.greaterThanSignDominateZone,
+        rightResidualLen = settings.rigthLengthResidualInfluenseZone,
+        leftResidualLen = settings.leftLengthResidualInfluenseZone;
 
-    std::shared_ptr<IntervalConditions> dominate = conditionDefiner.defineCondition(settings.lessThanSignDominateZone,settings.greaterThanSignDominateZone);
-    std::shared_ptr<IntervalConditions> rightResidual = conditionDefiner.defineCondition(settings.greaterThanSignDominateZone,rightResidualGrid);
-    std::shared_ptr<IntervalConditions> leftResidual = conditionDefiner.defineCondition(leftResidualGrid, settings.lessThanSignDominateZone);
+    
+    std::shared_ptr<IntervalConditions> 
+        dominate = conditionDefiner.defineCondition(dominateL,dominateG),
+        rightResidual = conditionDefiner.defineCondition(dominateG,rightResidualGrid),
+        leftResidual = conditionDefiner.defineCondition(leftResidualGrid, dominateL);
 
 
+
+        
     if(dominate->checkPointForCondition(angle))
         color = dominateExecutor.execute(angle,0);
 
     else if(rightResidual->checkPointForCondition(angle)){
-        color = residualInfluenseExecutor.execute(AngleAdder::sumAngle(angle, -settings.greaterThanSignDominateZone), settings.rigthLengthResidualInfluenseZone);
+        color = residualInfluenseExecutor.execute(AngleAdder::sumAngle(angle, -dominateG), rightResidualLen);
     }
     //вот с этим пиздец разобраться надо
     //очень жидко вычисляет рецесивный цвет
     else if(leftResidual->checkPointForCondition(angle)){
         if(settings.greaterThanSignDominateZone<settings.lessThanSignDominateZone)
-            color = residualInfluenseExecutor.execute(AngleAdder::sumAngle(angle,-2*settings.leftLengthResidualInfluenseZone), settings.leftLengthResidualInfluenseZone);
-        else color = residualInfluenseExecutor.execute(AngleAdder::sumAngle(angle,settings.leftLengthResidualInfluenseZone), settings.leftLengthResidualInfluenseZone);
+            color = residualInfluenseExecutor.execute(AngleAdder::sumAngle(angle,-2*leftResidualLen), leftResidualLen);
+        else color = residualInfluenseExecutor.execute(AngleAdder::sumAngle(angle,leftResidualLen), leftResidualLen);
     }
 
 

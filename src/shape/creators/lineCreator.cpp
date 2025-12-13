@@ -10,7 +10,7 @@ std::vector<point> CircleOutlineCreator::createOutline(uint16_t xc, uint16_t yc,
         y = radius;
     int16_t
         error = 0;
-    while (x <= y) {
+    auto makePoints = [&pts, xc, yc, x, y](){
         pts.push_back(point(xc + x, yc + y));
         pts.push_back(point(xc - x, yc + y));
         pts.push_back(point(xc + x, yc - y));
@@ -19,6 +19,10 @@ std::vector<point> CircleOutlineCreator::createOutline(uint16_t xc, uint16_t yc,
         pts.push_back(point(xc - y, yc + x));
         pts.push_back(point(xc + y, yc - x));
         pts.push_back(point(xc - y, yc - x));
+    };
+    
+    while (x <= y) {
+        makePoints();
         x++;
         if (error < 0)
             error += 2*x + 1;

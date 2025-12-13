@@ -2,8 +2,8 @@
 
 void angle::biasValue()
 {
-    while(value>PI) value-2*PI;
-    while(value<-PI) value-2*PI;
+    while(value>PI) value-=2*PI;
+    while(value<-PI) value+=2*PI;
 }
 
 angle::operator double() const

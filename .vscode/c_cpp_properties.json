@@ -13,7 +13,8 @@
                 "${workspaceFolder}/inc/base",
                 "${workspaceFolder}/inc/complimentWidgets",
                 "${workspaceFolder}/inc/color/colorSetters",
-                "${workspaceFolder}/inc/color/gradient"
+                "${workspaceFolder}/inc/color/gradient",
+                "C:/Qt/6.9.3/mingw_64/include/QtGui"
             ],
             "browse": {
                 "path": [
