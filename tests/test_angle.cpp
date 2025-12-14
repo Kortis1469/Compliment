@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "angle.h"
+#include "basicTypes.h"
 
 TEST(AngleTest, Equals) {
     angle a;

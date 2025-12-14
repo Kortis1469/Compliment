@@ -1,7 +1,7 @@
 #pragma once
 #include "conditionExecutor.h"
 #include "basicoperations.h"
-#include "intervalСonditions.h"
+#include "conditionDefiner.h"
 
 class GradientPointColorSubtractor{
 private:

@@ -63,7 +63,7 @@ set(PROJECT_SOURCES
    
     src/base/shape.cpp
     src/base/basicOperations.cpp
-    src/base/angle.cpp
+    src/base/basicTypes.cpp
 
     src/shape/creators/diskCreator.cpp
     src/shape/creators/filler.cpp
@@ -76,6 +76,8 @@ set(PROJECT_SOURCES
     src/color/gradient/intervalConditions.cpp
     src/color/gradient/conditionExecutor.cpp
     src/color/gradient/gradientCreator.cpp
+    src/color/gradient/intervalConditionsFactories.cpp
+    src/color/gradient/conditionDefiner.cpp
 
     src/color/colorSetters/IttentGradientColorSetter.cpp
 
@@ -101,9 +103,11 @@ qt_finalize_executable(Compliment)
 # -------------------- TESTS --------------------
 
 add_executable(ComplimentTests
-    src/base/angle.cpp
+    src/base/basicTypes.cpp
+    src/color/gradient/conditionExecutor.cpp
     tests/test_main.cpp
     tests/test_angle.cpp
+    tests/test_conditonExecutor.cpp
 )
 
 

@@ -15,29 +15,8 @@ uint16_t BrightnessCalculator::calculate(point p, point center, int radius, int 
     return brightness;
 }
 
-double AngleAdder::sumAngle(double leftAngle, double rightAngle)
-{
-    double sum = leftAngle + rightAngle;
-
-    while(sum>PI)
-        sum = (-(2*PI))+sum;
-    while(sum<-PI)
-        sum = (2*PI)+sum;
-    if(sum>PI) qDebug() << sum << leftAngle << rightAngle;
-    return sum;
-}
-
-
 bool ComporatorLinScan::compare(const point &l, const point &r)
 {
     if(l.y == r.y) return l.x < r.x;
     return l.y < r.y;
-}
-
-double AngleCalculator::calculateAngle(const point p, point pCenter)
-{
-        double
-            dx = p.x - pCenter.x,
-            dy = p.y - pCenter.y;
-        return std::atan2(dy,dx);
 }
