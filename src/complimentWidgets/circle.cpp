@@ -1,27 +1,29 @@
 #include "circle.h"
 
-Circle::Circle(QWidget *parent, uint16_t width, uint16_t height) : QWidget(parent), width(width/2), height(height/2) {
-    radius = width>height ? width/4: height/4;
+Circle::Circle(QWidget *parent, uint16_t x1, uint16_t y1,uint16_t x2, uint16_t y2) : QWidget(parent), width(abs(x2-x1)), height(abs(y2-y1)) {
+    
+    radius = width<height ? width: height;
     resize(radius*2, radius*2);
-}
-
-void Circle::paintEvent(QPaintEvent *event) {
-
+    move(x1,y1);
     DiskCreator diskCr(radius, radius, radius);
     std::shared_ptr<Shape> disk = diskCr.create();
     disk->setColor(IttenGradientColorSetter());
     
-    std::shared_ptr<const std::vector<point>> pts = disk->getPointsOfShapePtr();
+    colorDisk = disk->getPointsOfShapePtr();
+}
+
+void Circle::paintEvent(QPaintEvent *event) {
+
+    
     
     QPainter p;
     p.begin(this);
     
-    for(point p2:*pts){
+    for(point p2:*colorDisk){
         p.setPen(p2.color);
         p.drawPoint(p2.x,p2.y);
     }
     p.end();
-    circle = *pts;
 }
 
 void Circle::mousePressEvent(QMouseEvent *event)
@@ -30,7 +32,7 @@ void Circle::mousePressEvent(QMouseEvent *event)
     int y = event->position().y();
 
     qDebug() << "Clicked pixel:" << x << y;
-    for (const auto& p : circle)
+    for (const auto& p : *colorDisk)
     {
         if (p.x == x && p.y == y)
         {
@@ -38,9 +40,4 @@ void Circle::mousePressEvent(QMouseEvent *event)
             break;
         }
     }
-}
-
-
-Circle::~Circle(){
-
 }

@@ -1,28 +1,36 @@
 #include "colorIndicator.h"
 
+void ColorIndicator::mousePressEvent(QMouseEvent *event)
+ {
+         if (event->button() == Qt::LeftButton) {
+            dragOffset = event->globalPos() - frameGeometry().topLeft();
+        }
+}
 
-ColorIndicator::ColorIndicator(QWidget *parent):QWidget(parent)
+void ColorIndicator::mouseMoveEvent(QMouseEvent *event)
 {
-    resize(1080, 720);
+    if (event->buttons() & Qt::LeftButton)
+    {
+        move(event->globalPos() - dragOffset);
+    }
+}
+
+ColorIndicator::ColorIndicator(QWidget *parent, uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2) : QWidget(parent), width(abs(x2 - x1)), height(abs(y2 - y1))
+{
+    radius = width<height ? width: height;
+    resize(radius*2, radius*2);
+    move(x1,y1);
+    DonatCreator creator(width/2,height/2,10,8);
+    std::shared_ptr<Shape> donat = creator.create();
+    indicator = donat->getPointsOfShapePtr();
 }
 
 void ColorIndicator::paintEvent(QPaintEvent *event){
-    int
-        magicX = 1080/2,
-        magicY = 720/2,
-        magicR = 8;
-    int
-        height = abs(magicR-magicY),
-        width = abs(magicR-magicX);
-
-    DonatCreator creator(magicX,magicY,10,magicR);
-    std::shared_ptr<Shape> donat = creator.create();
-    std::shared_ptr<const std::vector<point>> pts = donat->getPointsOfShapePtr();
-
-
+   
     QPainter p;
+    p.setRenderHint(QPainter::Antialiasing, true);
     p.begin(this);
-    for(point p2:*pts){
+    for(point p2:*indicator){
         p.setPen(p2.color);
         p.drawPoint(p2.x,p2.y);
     }

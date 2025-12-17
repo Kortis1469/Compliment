@@ -12,8 +12,8 @@ int main(int argc, char *argv[])
     QWidget *mainW = new QWidget();
     mainW->resize(width, height);
 
-    Circle *c = new Circle(mainW, width, height);
-    ColorIndicator  *d = new ColorIndicator(mainW);
+    Circle *c = new Circle(mainW, 200, 200, 300, 300);
+    ColorIndicator  *d = new ColorIndicator(mainW,100,100,200,200);
 
     mainW->show();
     return a.exec();

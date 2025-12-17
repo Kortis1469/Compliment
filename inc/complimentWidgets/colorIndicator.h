@@ -19,11 +19,48 @@ class ColorIndicator : public QWidget
 {
     Q_OBJECT
 private:
-    std::vector<point> donat;
+    uint16_t width;
+    uint16_t height;
+    uint16_t radius;
+    std::shared_ptr<const std::vector<point>> indicator;
+    QPoint dragOffset;
+
+protected:
+    void mousePressEvent(QMouseEvent *event) override;
+    void mouseMoveEvent(QMouseEvent *event) override;    
+
 public:
-    ColorIndicator(QWidget *parent);
+    ColorIndicator(QWidget *parent, uint16_t x1, uint16_t y1,uint16_t x2, uint16_t y2);
     void paintEvent(QPaintEvent *event) override;
-    //void mousePressEvent(QMouseEvent *event) override;
     ~ColorIndicator();
 };
 #endif // DONAT_H
+
+/*
+class DraggableWidget : public QWidget
+{
+    Q_OBJECT
+
+public:
+    explicit DraggableWidget(QWidget *parent = nullptr)
+        : QWidget(parent) {}
+
+protected:
+    void mousePressEvent(QMouseEvent *event) override
+    {
+        if (event->button() == Qt::LeftButton) {
+            dragOffset = event->globalPos() - frameGeometry().topLeft();
+        }
+    }
+
+    void mouseMoveEvent(QMouseEvent *event) override
+    {
+        if (event->buttons() & Qt::LeftButton) {
+            move(event->globalPos() - dragOffset);
+        }
+    }
+
+private:
+    QPoint dragOffset;
+};
+*/
