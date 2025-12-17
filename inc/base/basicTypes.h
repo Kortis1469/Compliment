@@ -27,17 +27,30 @@ class angle{
         angle(double value);
         angle(const point& p,const point& pCenter);
         angle();
-        angle operator+(const angle& a);
-        angle operator-(const  angle& a);
-        angle operator*(const  angle& a);
-        angle operator/(const  angle& a);
-        bool operator<(const  angle& a) const;
-        bool operator>(const  angle& a) const;
-        bool operator<=(const angle& a) const;
-        bool operator>=(const angle& a) const;
-        bool operator==(const angle& a) const;
+
+        template <typename T>
+        angle operator+(const T& a);
+         template <typename T>
+        angle operator-(const T& a);
+         template <typename T>
+        angle operator*(const T& a);
+         template <typename T>
+        angle operator/(const T& a);
+    
+         template <typename T>
+        bool operator<(const T& a);
+         template <typename T>
+        bool operator>(const T& a);
+         template <typename T>
+        bool operator<=(const T& a);
+         template <typename T>
+        bool operator>=(const T& a);
+         template <typename T>
+        bool operator==(const T& a);
+    
 
         void pointsToAngle(const point& p,const point& pCenter);
+        double getValueShiftedTo2PI();
 
 };
 
@@ -53,6 +66,125 @@ inline void angle::operator=(const T &a)
     biasValue();
 }
 
+template <typename T>
+inline angle angle::operator+(const T &a)
+{
+    angle res;
+    if constexpr (std::is_same_v<T, angle>) {
+        res = this->value + a.value;  
+    }
+    else{
+        res = this->value + static_cast<double>(a);
+    }
+    biasValue();
+    return res;
+}
+
+template <typename T>
+inline angle angle::operator-(const T &a)
+{
+    angle res;
+    if constexpr (std::is_same_v<T, angle>) {
+        res = this->value - a.value;  
+    }
+    else{
+        res = this->value - static_cast<double>(a);
+    }
+    biasValue();
+    return res;
+}
+
+template <typename T>
+inline angle angle::operator*(const T &a)
+{
+    angle res;
+    if constexpr (std::is_same_v<T, angle>) {
+        res = this->value * a.value;  
+    }
+    else{
+        res = this->value * static_cast<double>(a);
+    }
+    biasValue();
+    return res;
+}
+
+template <typename T>
+inline angle angle::operator/(const T &a)
+{
+    angle res;
+    if constexpr (std::is_same_v<T, angle>) {
+        res = this->value / a.value;  
+    }
+    else{
+        res = this->value / static_cast<double>(a);
+    }
+    biasValue();
+    return res;
+}
+
+template <typename T>
+inline bool angle::operator<(const T &a)
+{
+  
+    if constexpr (std::is_same_v<T, angle>) {
+        return this->value < a.value;  
+    }
+    else{
+        return this->value < static_cast<double>(a);
+    }
+    
+}
+
+template <typename T>
+inline bool angle::operator>(const T &a)
+{
+  
+    if constexpr (std::is_same_v<T, angle>) {
+        return this->value > a.value;  
+    }
+    else{
+        return this->value > static_cast<double>(a);
+    }
+    
+}
+template <typename T>
+inline bool angle::operator<=(const T &a)
+{
+  
+    if constexpr (std::is_same_v<T, angle>) {
+        return this->value <= a.value;  
+    }
+    else{
+        return this->value <= static_cast<double>(a);
+    }
+    
+}
+
+template <typename T>
+inline bool angle::operator>=(const T &a)
+{
+  
+    if constexpr (std::is_same_v<T, angle>) {
+        return this->value >= a.value;  
+    }
+    else{
+        return this->value >= static_cast<double>(a);
+    }
+    
+}
+
+template <typename T>
+inline bool angle::operator==(const T &a)
+{
+  
+    if constexpr (std::is_same_v<T, angle>) {
+        return this->value == a.value;  
+    }
+    else{
+        return this->value == static_cast<double>(a);
+    }
+    
+}
 
 struct ColorSettings{
     angle greaterThanSignDominateZone;

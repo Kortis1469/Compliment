@@ -73,11 +73,14 @@ set(PROJECT_SOURCES
     src/shape/shapes/disk.cpp
     src/shape/shapes/donat.cpp
 
-    src/color/gradient/intervalConditions.cpp
-    src/color/gradient/conditionExecutor.cpp
-    src/color/gradient/gradientCreator.cpp
-    src/color/gradient/intervalConditionsFactories.cpp
     src/color/gradient/conditionDefiner.cpp
+    src/color/gradient/conditionExecutor.cpp
+    src/color/gradient/conditions.cpp
+    src/color/gradient/gradientCreator.cpp
+    src/color/gradient/IttenGradientCreator.cpp
+    src/color/gradient/intervalConditions.cpp
+    src/color/gradient/intervalConditionsFactories.cpp
+    src/color/gradient/shifterToRelativeAngleValues.cpp
 
     src/color/colorSetters/IttentGradientColorSetter.cpp
 
@@ -105,8 +108,10 @@ qt_finalize_executable(Compliment)
 add_executable(ComplimentTests
     src/base/basicTypes.cpp
     src/color/gradient/conditionExecutor.cpp
+    src/color/gradient/shifterToRelativeAngleValues.cpp
     tests/test_main.cpp
     tests/test_angle.cpp
+    tests/test_shifterToRelative.cpp
     tests/test_conditonExecutor.cpp
 )
 

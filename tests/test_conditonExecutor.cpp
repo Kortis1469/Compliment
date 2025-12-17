@@ -1,17 +1,20 @@
 #include "conditionExecutor.h"
 #include <gtest/gtest.h>
 
+
+//  ColorSettings 
+//         redSettings(-PI/3, 2*PI/3, PI/3, PI/3),
+//         greenSettings(2*PI/3, PI/6, 5*PI/6, PI/6),
+//         blueSettings(PI/6, -PI/3, PI/6, PI/3);
+
 TEST(ConditionTest, Range){
-    angle angleGrid = PI/3;
-    angle angl(0);
-    angle angl1;
+    angle angleGrid = PI/6;
+    double len = PI/6;
+    
     int color;
     ResidualInfluenseZoneExecutor residualExecutor;
-    for (double i = -PI/3; i <= PI/3; i+=0.1){
-        angl1 = i;
-        color = residualExecutor.execute(angl+angl1, angleGrid);
-        
-        EXPECT_GE(color, 0);
-        EXPECT_LT(color,  255);
+    for (double i = angleGrid; i <= angleGrid+len; i+=0.01){
+        color = residualExecutor.execute(i, angleGrid, len);
+        EXPECT_GT(color, 0);
     }
 }

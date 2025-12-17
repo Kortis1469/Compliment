@@ -1,12 +1,14 @@
 #include "conditionExecutor.h"
 
-uint8_t ResidualInfluenseZoneExecutor::execute(angle angleOfPoint, angle angleGrid) const
+uint8_t ResidualInfluenseZoneExecutor::execute(double angl, double dominateGrid, double length) const
 {   
-    double AngleRatio = abs(angleOfPoint/angleGrid);
-    return qRound(abs(255*(AngleRatio-1)));
+    ShifterToRelativeAngleValues strav;
+    angl = strav.biasAngleWithSensitiveLengthSign(angl,dominateGrid,length);
+   
+    return qRound(255*(1-abs(angl/length)));
 }
 
-uint8_t DominateZoneExecutor::execute(angle angleOfPoint, angle angleGrid) const
+uint8_t DominateZoneExecutor::execute(double angl, double dominateGrid, double length) const
 {
     return UINT8_MAX;
 }
