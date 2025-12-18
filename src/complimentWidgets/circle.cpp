@@ -2,7 +2,9 @@
 
 Circle::Circle(QWidget *parent, uint16_t x1, uint16_t y1,uint16_t x2, uint16_t y2) : QWidget(parent), width(abs(x2-x1)), height(abs(y2-y1)) {
     
-    radius = width<height ? width: height;
+    radius = width<height ? width/2: height/2;
+    XCenter = radius;
+    YCenter = radius;
     resize(radius*2, radius*2);
     move(x1,y1);
     DiskCreator diskCr(radius, radius, radius);
@@ -14,21 +16,16 @@ Circle::Circle(QWidget *parent, uint16_t x1, uint16_t y1,uint16_t x2, uint16_t y
 
 void Circle::paintEvent(QPaintEvent *event) {
 
-    
-    
-    QPainter p;
-    p.begin(this);
-    
+    QPainter p(this);
     for(point p2:*colorDisk){
         p.setPen(p2.color);
         p.drawPoint(p2.x,p2.y);
     }
-    p.end();
 }
 
 void Circle::mousePressEvent(QMouseEvent *event)
 {
-    int x = event->position().x();   // Qt 6
+    int x = event->position().x();   
     int y = event->position().y();
 
     qDebug() << "Clicked pixel:" << x << y;
@@ -40,4 +37,20 @@ void Circle::mousePressEvent(QMouseEvent *event)
             break;
         }
     }
+}
+
+uint16_t Circle::getRadius()
+{
+    return this->radius; 
+    
+}
+
+uint16_t Circle::getXCenter()
+{
+    return this->XCenter;
+}
+
+uint16_t Circle::getYCenter()
+{
+    return this->YCenter;
 }

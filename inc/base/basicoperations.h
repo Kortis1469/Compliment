@@ -11,3 +11,8 @@ class ComporatorLinScan{
     public:
         static bool compare(const point& l, const point& r);
 };
+
+class VectorLenCalculator{
+    public: 
+        static uint16_t calculateVectorLen(point p, point center);
+};

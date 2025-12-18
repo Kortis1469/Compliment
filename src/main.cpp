@@ -12,9 +12,11 @@ int main(int argc, char *argv[])
     QWidget *mainW = new QWidget();
     mainW->resize(width, height);
 
-    Circle *c = new Circle(mainW, 200, 200, 300, 300);
+    uint16_t widthFC = 1080-620;
+    uint16_t heightFC = (720-630)/2;
+    Circle *c = new Circle(mainW, widthFC, heightFC, 1060, 720);
     ColorIndicator  *d = new ColorIndicator(mainW,100,100,200,200);
-
+    d->alignToRadius(10,10,10);
     mainW->show();
     return a.exec();
 }

@@ -11,10 +11,15 @@ void ColorIndicator::mouseMoveEvent(QMouseEvent *event)
 {
     if (event->buttons() & Qt::LeftButton)
     {
-        move(event->globalPos() - dragOffset);
+        if(isValidArea(dragOffset)) move(event->globalPos() - dragOffset);
     }
 }
 
+bool ColorIndicator::isValidArea(QPoint offset)
+{
+    int offsetVec = VectorLenCalculator::calculateVectorLen({offset.x(),offset.y()},{xCenter,yCenter});
+    return offsetVec <= radius;
+}
 ColorIndicator::ColorIndicator(QWidget *parent, uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2) : QWidget(parent), width(abs(x2 - x1)), height(abs(y2 - y1))
 {
     radius = width<height ? width: height;
@@ -27,15 +32,22 @@ ColorIndicator::ColorIndicator(QWidget *parent, uint16_t x1, uint16_t y1, uint16
 
 void ColorIndicator::paintEvent(QPaintEvent *event){
    
-    QPainter p;
-    p.setRenderHint(QPainter::Antialiasing, true);
-    p.begin(this);
+    QPainter p(this);
     for(point p2:*indicator){
         p.setPen(p2.color);
         p.drawPoint(p2.x,p2.y);
     }
-    p.end();
+    
 }
+
+void ColorIndicator::alignToRadius(uint16_t xCenter, uint16_t yCenter, uint16_t radius)
+{
+    this->xCenter = xCenter;
+    this->yCenter = yCenter;
+    this->radius = radius;
+    move(xCenter,yCenter);
+}
+
 
 ColorIndicator::~ColorIndicator()
 {

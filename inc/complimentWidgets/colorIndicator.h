@@ -11,7 +11,6 @@
 #include <QColor>
 #include <QtCore>
 #include <QMouseEvent>
-#include "basicTypes.h"
 #include "diskCreator.h"
 #include "donatCreator.h"
 
@@ -22,45 +21,22 @@ private:
     uint16_t width;
     uint16_t height;
     uint16_t radius;
+    uint16_t xCenter;
+    uint16_t yCenter;
+    uint16_t radiusAlign;
+
     std::shared_ptr<const std::vector<point>> indicator;
     QPoint dragOffset;
 
 protected:
     void mousePressEvent(QMouseEvent *event) override;
-    void mouseMoveEvent(QMouseEvent *event) override;    
+    void mouseMoveEvent(QMouseEvent *event) override;
+    bool isValidArea(QPoint offset);    
 
 public:
     ColorIndicator(QWidget *parent, uint16_t x1, uint16_t y1,uint16_t x2, uint16_t y2);
     void paintEvent(QPaintEvent *event) override;
+    void alignToRadius(uint16_t xCenter, uint16_t yCenter, uint16_t radius);
     ~ColorIndicator();
 };
 #endif // DONAT_H
-
-/*
-class DraggableWidget : public QWidget
-{
-    Q_OBJECT
-
-public:
-    explicit DraggableWidget(QWidget *parent = nullptr)
-        : QWidget(parent) {}
-
-protected:
-    void mousePressEvent(QMouseEvent *event) override
-    {
-        if (event->button() == Qt::LeftButton) {
-            dragOffset = event->globalPos() - frameGeometry().topLeft();
-        }
-    }
-
-    void mouseMoveEvent(QMouseEvent *event) override
-    {
-        if (event->buttons() & Qt::LeftButton) {
-            move(event->globalPos() - dragOffset);
-        }
-    }
-
-private:
-    QPoint dragOffset;
-};
-*/
