@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
     uint16_t heightFC = (720-630)/2;
     Circle *c = new Circle(mainW, widthFC, heightFC, 1060, 720);
     ColorIndicator  *d = new ColorIndicator(mainW,100,100,200,200);
-    d->alignToRadius(10,10,10);
+    d->alignToRadius(10,10,200);
     mainW->show();
     return a.exec();
 }
