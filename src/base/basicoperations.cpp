@@ -3,7 +3,7 @@
 uint16_t BrightnessCalculator::calculate(point p, point center, int radius, int color)
 {
     
-    uint16_t lengthOfVector = VectorLenCalculator::calculateVectorLen(p, center);
+    double lengthOfVector = VectorLenCalculator::calculateVectorLen(p, center);
 
     double additionalBrightness = 255 - color;
     uint16_t brightness = qRound(additionalBrightness*abs(((lengthOfVector)/(radius))-1));

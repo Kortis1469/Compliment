@@ -23,7 +23,7 @@ uint8_t GradientPointColorSubtractor::calculateColor(point p, point pCenter, int
     else if(conds.isLeftResidual(angl)) {
         color = residualInfluenseExecutor.execute(angl, settings.lessThanSignDominateZone, -settings.leftLengthResidualInfluenseZone);
     }
-    //color += BrightnessCalculator::calculate(p,pCenter,r,color);
+    color += BrightnessCalculator::calculate(p,pCenter,r,color);
 
     return color;
 }

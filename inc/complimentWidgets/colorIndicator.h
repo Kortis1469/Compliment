@@ -31,7 +31,9 @@ private:
 protected:
     void mousePressEvent(QMouseEvent *event) override;
     void mouseMoveEvent(QMouseEvent *event) override;
-    bool isValidArea(QPoint offset);    
+    bool isValidArea(QPoint offset);
+    void biasToRadius(QPoint &position);
+    
 
 public:
     ColorIndicator(QWidget *parent, int32_t xCenter, int32_t yCenter, int32_t radius, int32_t innerRadius);
