@@ -1,16 +1,17 @@
 #include "circle.h"
 
-Circle::Circle(QWidget *parent, uint16_t x1, uint16_t y1,uint16_t x2, uint16_t y2) : QWidget(parent), width(abs(x2-x1)), height(abs(y2-y1)) {
+Circle::Circle(QWidget *parent, int32_t xCenter, int32_t yCenter, int32_t radius) : QWidget(parent), width(radius*2), height(radius*2) {
     
-    radius = width<height ? width/2: height/2;
-    XCenter = radius;
-    YCenter = radius;
+    this->radius = radius;
+    this->xCenter = xCenter;
+    this->yCenter = yCenter;
     resize(radius*2, radius*2);
-    move(x1,y1);
+    
     DiskCreator diskCr(radius, radius, radius);
     std::shared_ptr<Shape> disk = diskCr.create();
     disk->setColor(IttenGradientColorSetter());
     
+    move(xCenter-radius,yCenter-radius);
     colorDisk = disk->getPointsOfShapePtr();
 }
 
@@ -47,10 +48,10 @@ uint16_t Circle::getRadius()
 
 uint16_t Circle::getXCenter()
 {
-    return this->XCenter;
+    return this->xCenter;
 }
 
 uint16_t Circle::getYCenter()
 {
-    return this->YCenter;
+    return this->yCenter;
 }

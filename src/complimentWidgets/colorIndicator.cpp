@@ -9,24 +9,44 @@ void ColorIndicator::mousePressEvent(QMouseEvent *event)
 
 void ColorIndicator::mouseMoveEvent(QMouseEvent *event)
 {
+    
     if (event->buttons() & Qt::LeftButton)
-    {
-        if(isValidArea(dragOffset)) move(event->globalPos() - dragOffset);
+    {   
+        QPoint position =  event->globalPos() - dragOffset;
+        if (!isValidArea(position)) {
+            QPoint center(xCenter, yCenter);
+            QPointF relativePosition = position - center;
+
+            double len = VectorLenCalculator::calculateVectorLen({position.x(),position.y()},{center.x(),center.y()});
+            relativePosition /= len;
+            relativePosition *= radiusAlign;
+
+            position = center + relativePosition.toPoint();
+        }
+        position.setX(position.x()-radius);
+        position.setY(position.y()-radius);
+        move(position);
     }
+
 }
 
 bool ColorIndicator::isValidArea(QPoint offset)
-{
-    int offsetVec = VectorLenCalculator::calculateVectorLen({offset.x(),offset.y()},{xCenter,yCenter});
-    return offsetVec <= radius;
+{ 
+    int position = VectorLenCalculator::calculateVectorLen({offset.x(),offset.y()},{xCenter,yCenter});
+    return position <= radiusAlign;
 }
-ColorIndicator::ColorIndicator(QWidget *parent, uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2) : QWidget(parent), width(abs(x2 - x1)), height(abs(y2 - y1))
+ColorIndicator::ColorIndicator(QWidget *parent, int32_t xCenter, int32_t yCenter, int32_t radius, int32_t innerRadius) : QWidget(parent), width(radius*2), height(radius*2)
 {
-    radius = width<height ? width: height;
+    this->radius = radius;
+    this->xCenter = xCenter;
+    this->yCenter = yCenter;
     resize(radius*2, radius*2);
-    move(x1,y1);
-    DonatCreator creator(width/2,height/2,10,8);
+    
+    DonatCreator creator(radius,radius, radius,innerRadius);
     std::shared_ptr<Shape> donat = creator.create();
+
+    move(xCenter-radius,yCenter-radius);
+
     indicator = donat->getPointsOfShapePtr();
 }
 
@@ -44,8 +64,8 @@ void ColorIndicator::alignToRadius(uint16_t xCenter, uint16_t yCenter, uint16_t 
 {
     this->xCenter = xCenter;
     this->yCenter = yCenter;
-    this->radius = radius;
-    move(xCenter,yCenter);
+    this->radiusAlign = radius;//+this->radius/2;
+    move(xCenter-this->radius,yCenter-this->radius);
 }
 
 

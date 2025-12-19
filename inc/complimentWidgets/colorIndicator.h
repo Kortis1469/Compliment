@@ -34,7 +34,7 @@ protected:
     bool isValidArea(QPoint offset);    
 
 public:
-    ColorIndicator(QWidget *parent, uint16_t x1, uint16_t y1,uint16_t x2, uint16_t y2);
+    ColorIndicator(QWidget *parent, int32_t xCenter, int32_t yCenter, int32_t radius, int32_t innerRadius);
     void paintEvent(QPaintEvent *event) override;
     void alignToRadius(uint16_t xCenter, uint16_t yCenter, uint16_t radius);
     ~ColorIndicator();

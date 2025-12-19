@@ -19,13 +19,13 @@ class Circle : public QWidget
     private:
         uint16_t width;
         uint16_t height;
-        uint16_t XCenter;
-        uint16_t YCenter;
+        uint16_t xCenter;
+        uint16_t yCenter;
         uint16_t radius;
 
         std::shared_ptr<const std::vector<point>> colorDisk;
     public:
-        Circle(QWidget *parent, uint16_t x1, uint16_t y1,uint16_t x2, uint16_t y2);
+        Circle(QWidget *parent, int32_t xCenter, int32_t yCenter, int32_t radius);
         void paintEvent(QPaintEvent *event) override;
         void mousePressEvent(QMouseEvent *event) override;
         uint16_t getRadius();
