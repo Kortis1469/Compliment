@@ -12,6 +12,7 @@ struct point{
     int y;
     QColor color;
     point(int x, int y) : x(x), y(y), color("#000000") {}
+    bool operator<(const point&a) const;
 };
 
 

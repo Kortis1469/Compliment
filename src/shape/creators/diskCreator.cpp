@@ -35,6 +35,7 @@ std::shared_ptr<Shape> DiskCreator::create() const
     point pCenter(xCenter,yCenter);
     std::vector<point> pts = circleOutlineCr.createOutline(pCenter.x,pCenter.y, radius);
     filler.fill(pts);
+    sort(pts.begin(),pts.end(),ComporatorLinScan::compare);
     std::shared_ptr<Shape> disk = std::make_shared<Disk>(pts,xCenter,yCenter,radius);
     return disk;
 }

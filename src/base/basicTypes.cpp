@@ -1,5 +1,10 @@
 #include "basicTypes.h"
 
+bool point::operator<(const point& a)const{
+    if(this->y == a.y) return this->x < a.x;
+    return this->y < a.y;
+}
+
 void angle::biasValue()
 {
     while(value>2*PI) value-=2*PI;
@@ -37,3 +42,5 @@ double angle::getValueShiftedTo2PI()
     if(value<0) return value+2*PI;
     return value;
 }
+
+

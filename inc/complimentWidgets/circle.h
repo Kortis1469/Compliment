@@ -27,10 +27,10 @@ class Circle : public QWidget
     public:
         Circle(QWidget *parent, int32_t xCenter, int32_t yCenter, int32_t radius);
         void paintEvent(QPaintEvent *event) override;
-        void mousePressEvent(QMouseEvent *event) override;
         uint16_t getRadius();
         uint16_t getXCenter();
         uint16_t getYCenter();
+        QColor getColorFromPix(point p);
         ~Circle() = default;
 
 

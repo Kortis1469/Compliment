@@ -13,6 +13,8 @@
 #include <QMouseEvent>
 #include "diskCreator.h"
 #include "donatCreator.h"
+#include "circle.h"
+#include <QLabel>
 
 class ColorIndicator : public QWidget
 {
@@ -24,7 +26,8 @@ private:
     uint16_t xCenter;
     uint16_t yCenter;
     uint16_t radiusAlign;
-
+    Circle * circle;
+    QLabel * label;
     std::shared_ptr<const std::vector<point>> indicator;
     QPoint dragOffset;
 
@@ -36,9 +39,14 @@ protected:
     
 
 public:
-    ColorIndicator(QWidget *parent, int32_t xCenter, int32_t yCenter, int32_t radius, int32_t innerRadius);
+    ColorIndicator(QWidget *parent, int32_t radius, int32_t innerRadius, Circle * circle, QLabel * output);
     void paintEvent(QPaintEvent *event) override;
+    void alignToColorCircle(Circle * c);
     void alignToRadius(uint16_t xCenter, uint16_t yCenter, uint16_t radius);
+    void setColorOutput(QLabel * label);
+    QPoint getActualCenter() const;
+    QColor getColorFromCenterPix();
+    void updateOutput();
     ~ColorIndicator();
 };
 #endif // DONAT_H

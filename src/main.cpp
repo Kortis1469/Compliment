@@ -1,6 +1,7 @@
 #include <QApplication>
 #include "colorIndicator.h"
 #include "circle.h"
+#include <QLabel>
 
 int main(int argc, char *argv[])
 {
@@ -15,9 +16,11 @@ int main(int argc, char *argv[])
     uint16_t widthFC = width/2;
     uint16_t heightFC = height/2;
     Circle *c = new Circle(mainW, widthFC, heightFC, 250);
-    ColorIndicator  *d = new ColorIndicator(mainW,100,100,10,8);
-    d->alignToRadius(c->getXCenter(),c->getYCenter(),c->getRadius());
-
+    
+    QLabel *label = new QLabel("Информация", mainW);
+    label->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
+    ColorIndicator  *d = new ColorIndicator(mainW,10,8,c,label);
+    
     mainW->show();
     return a.exec();
 }
